@@ -1,0 +1,19 @@
+name: latex compile
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  latex-job:
+    runs-on: ubuntu-latest
+    name: Compile LaTeX file
+    steps:
+      - uses: actions/checkout@v1
+      - name: Compile
+        uses: vinay0410/tectonic-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tex_path: './thesis_main.tex'
