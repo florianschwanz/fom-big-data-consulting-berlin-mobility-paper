@@ -8,5 +8,15 @@
 \subsubsection{OSM}
 \subsubsection{etc}
 
-\subsection{Analysemethodik}
-\subsubsection{Isochrone}
+\subsection{Analyse der Erreichbarkeit Mithilfe von Isochronen}
+\subsubsection{Die Mobilitätsinfrastruktur wird in Form von Graphen repräsentiert}
+%todo fancy Wörter aus präsentation benutzen und titel anpassen
+
+Im Kontext der Verkehrsanalyse wird die gesamte Infrastruktur mithilfe von Geodaten in Form sogenannter Graphen dargestellt. U-Bahnstationen und Bushaltestellen werden in einem Graph immer als Knoten repräsentiert. Solche Knoten können als Punkte auf einer Karte visualisiert werden. Die Verbindung zwischen zwei Knoten – also beispielsweise die Strecke zwischen zwei Haltestellen – wird durch sogenannte Kanten abgebildet. Auf diese Weise kann ein Graph erstellt werden, der die gesamte Mobilitätsinfrastruktur in Berlin dargestellt. In diesem Graph sind nur die Knoten direkt miteinander verbunden, die auch in der realen Welt miteinander verbunden sind. So ist zum Beispiel der Knoten, der die U-Bahnstation Boddinstraße repräsentiert direkt mit den Knoten der Stationen Hermannplatz und Leinestraße verbunden, da beide Haltestellen direkt an die U-Bahnstation Boddinstraße angrenzen.
+
+\subsubsection{Mobilität kann mit Isochronen sichtbar gemacht werden}
+Die Verbindungslinien zu allen Orten, die von einem Ausgangspunkt aus in einer bestimmten Zeit erreichbar sind, bezeichnet man als Isochrone. Mithilfe von Isochronen können also alle Kanten eines Graphen sichtbar gemacht werden, die innerhalb einer bestimmten Zeit mit einem bestimmten Verkehrsmittel erreicht werden können. Isochrone machen also unterschiedliche Verkehrsmittel entlang eines Zeitfaktors vergleichbar. In der Karte rechts ist zu sehen, wie weit ein Fußgänger ausgehend vom Standort der FOM-Hochschule in Berlin-Charlottenburg innerhalb von 15, 20 und 30 Minuten laufen könnte. Dabei werden alle möglichen Wege mithilfe der Isochrone berechnet und visualisiert. So wird deutlich, dass ein Fußgänger innerhalb von 15 Minuten bis zum Zoologischer Garten laufen könnte. Innerhalb von 30 Minuten könnte der Fußgänger die Strecke bis zur Siegessäule zurücklegen.
+
+\subsubsection{Visualisierung des öffentlichen Nahverkehrs}
+%todo: Bilder sind hier sehr wichtig
+Bei der Betrachtung der Isochrone für den ÖPNV wird im Vergleich zu den Fußgänger-Isochronen eine deutliche Steigerung der Reichweite sichtbar. Indem die Graphen für Fußgänger, Bus, U-Bahn, S-Bahn und Tram miteinander verbunden werden, können auch komplexe Streckenverläufe abgebildet werden. Zum einen werden die Fußwege zu beziehungsweise von einer Station oder Haltestelle berechnet. Zum anderen werden bei der Berechnung der Isochrone mögliche Umstiege berücksichtigt. So kann sichergestellt werden, dass die berechneten Strecken, möglichst den Strecken entsprechen, die die Berliner tatsächlich jeden Tag zurücklegen.
