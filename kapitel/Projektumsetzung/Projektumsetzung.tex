@@ -6,37 +6,37 @@
 \subsection{Vorgehensmodell und Organisation}
 \label{Vorgehensmodelle_und_organisation}
 
-Die Umsetzung des Projekts ist unter Verwendung der agilen Methodiken \emph{Kanban} und \emph{Extreme Programming} erfolgt. Als Quellcodeverwaltungssystem ist \emph{GitHub} zum Einsatz gekommen. Die Verwendung der genannten Vorgehensmodelle und Werkzeuge soll im Folgenden skizziert werden.
+Die Umsetzung des Projekts ist unter Verwendung der agilen Methodiken \emph{Kanban} und \emph{Extreme Programming} erfolgt. Als Quellcodeverwaltungssystem ist \emph{GitHub} zum Einsatz gekommen. Die  genannten Vorgehensmodelle und Werkzeuge werden im Folgenden erläutert.
 
 \subsubsection{Kanban}
 \label{kanban}
 
-Kanban erlaubt als agiles Vorgehensmodell in der Softwareentwicklung durch die konsequente Visualisierung des Status einzelner Arbeitspakete eine transparente Darstellung des Projektfortschritts. Gleichzeitig verhindert die durchgehende Verfolgung des \ac{WIP}, dass das Projektteam an zu vielen Aufgaben parallel arbeitet.
+Kanban ist ein weitverbreitetes agiles Vorgehensmodell in der Softwareentwicklung. Kanban ermöglicht durch die konsequente Visualisierung des Status einzelner Arbeitspakete eine transparente Darstellung des Projektfortschritts. Gleichzeitig verhindert die durchgehende Verfolgung des \ac{WIP}, dass das Projektteam an zu vielen Aufgaben parallel arbeitet.
 
 \subsubsection{Extreme Programming}
 \label{extreme_programming}
 
-Bei \emph{Extreme Programming} liegt der Fokus auf der Erstellung funktionsfähiger Software zu Lasten einer formalisierten Vorgehensweise. In Iterationen wird das Softwareprodukt iterativ weiterentwickelt, wobei stets ein lauffähiges Inkrement existiert. Da sich dieses Projekt auf das Data Storytelling fokussiert und sich damit die Implementierung auf die Erstellung eines Prototypen beschränkt, ist bewusst auf die Aufwandsschätzung einzelner Arbeitspakete verzichtet worden.
+Bei \emph{Extreme Programming} liegt der Fokus auf der Erstellung funktionsfähiger Software zu Lasten einer formalisierten Vorgehensweise. Das Softwareprodukt wird in Iterationen weiterentwickelt, wobei stets ein lauffähiges Inkrement existiert. Da sich dieses Projekt auf das Data Storytelling fokussiert und sich damit die Implementierung auf die Erstellung eines Prototypen beschränkt, ist bewusst auf die Aufwandsschätzung einzelner Arbeitspakete verzichtet worden.
 
 \subsubsection{Weekly Sync}
 \label{weekly_sync}
 
-Ein wöchentlicher Abstimmungstermin hat über die gesamte Projektlaufzeit Raum für die Synchronisation des Umsetzungsfortschritts, die gemeinsame Priorisierung der offenen Arbeitspakete, aber auf für technische Diskussionen gegeben.
+Ein wöchentlicher Abstimmungstermin hat über die gesamte Projektlaufzeit Raum für die Synchronisation des Umsetzungsfortschritts, die gemeinsame Priorisierung der offenen Arbeitspakete sowie für technische Diskussionen gegeben.
 
 \subsubsection{Pair Programming}
 \label{pair_programming}
 
-Teile der Konzeptions- und Implementierungsarbeiten sind im \emph{Pair Programming} durchgeführt worden. Bei dieser Technik teilen sich zwei Entwickler einen Bildschirm, wobei einer der beiden als Pilot und der andere als Navigator agiert. Der Pilot ist in diesem Szenario derjenige, der den Quellcode schreibt, der Navigator wiederum gibt die Richtung vor. Diese Vorgehensweise kann durch das Vier-Augen-Prinzip die Qualität des Quellcodes steigern. Implizit findet darüber hinaus auch ein Wissenstransfer zwischen den beiden Teilnehmern statt.
+Teile der Konzeptions- und Implementierungsarbeiten sind im \emph{Pair Programming} durchgeführt worden. Bei dieser Technik teilen sich zwei Entwickler einen Bildschirm, wobei einer der beiden als Pilot und der andere als Navigator agiert. Der Pilot ist in diesem Szenario derjenige, der den Quellcode schreibt, der Navigator wiederum gibt die Richtung vor. Diese Vorgehensweise kann durch das Vier-Augen-Prinzip die Qualität des Quellcodes steigern. Implizit findet darüber hinaus auch ein Wissenstransfer zwischen den beiden Entwicklern statt.
 
 \subsection{Werkzeuge und Projektstruktur}
 \label{werkzeuge_und_projektstruktur}
 
-Der folgende Abschnitt beschreibt die während des Projekts verwendet Werkzeuge, welche für das Hosting der Webapplikation und das Projektmanagement genutzt worden sind.
+Der folgende Abschnitt beschreibt die während des Projekts verwendeten Werkzeuge, welche für das Hosting der Webapplikation und das Projektmanagement genutzt worden sind.
 
 \subsubsection{Firebase}
 \label{firebase}
 
-\emph{Firebase}\footnote{https://firebase.google.com/} bietet als sogenanntes Backend-as-a-Service (BaaS) die Möglichkeit, Datenbanken und Webhosting als Dienstleistung zu nutzen, ohne eine dedizierte Infrastruktur aufsetzen zu müssen, wodurch es sich insbesondere für Experimente und Prototypen eignet. Die im Rahmen des Projekts erstellte interaktive Webapplikation ist unter der URL \url{https://berlin-mobility.web.app} erreichbar.
+\emph{Firebase}\footnote{https://firebase.google.com/} bietet als sogenanntes Backend-as-a-Service (BaaS)\todo[inline]{BaaS ggf. in Glossar? und in acc} die Möglichkeit, Datenbanken und Webhosting als Dienstleistung zu nutzen, ohne eine dedizierte Infrastruktur aufsetzen zu müssen, wodurch es sich insbesondere für Experimente und Prototypen eignet. Firebasis wird für das hosting der im Rahmen des Projekts entwickelten Webapplikation verwendet.
 
 \subsubsection{Github}
 \label{github}
@@ -56,7 +56,7 @@ GitHub beinhaltet mit \emph{GitHub Projects}\footnote{https://github.com/feature
 \paragraph*{GitHub Actions}
 \label{github_actions}
 
-Mittels \emph{GitHub Actions}\footnote{https://github.com/features/actions/} lassen sich wiederkehrende Aufgaben basierend auf Änderungen an der Codebasis automatisieren. Im Rahmen dieses Projekts veranlasst beispielsweise die Veröffentlichung einer Quellcodeänderung innerhalb des Frontend-Projekts das automatische Deployment der App nach Firebase Hosting, wodurch jeder Zwischenstand öffentlich sichtbar ist und evaluiert werden kann.
+Mittels \emph{GitHub Actions}\footnote{https://github.com/features/actions/} lassen sich wiederkehrende Aufgaben basierend auf Änderungen an der Codebasis automatisieren. Im Rahmen dieses Projekts veranlasst beispielsweise die Veröffentlichung einer Quellcodeänderung innerhalb des Frontend-Projekts das automatische Deployment der App nach Firebase, wodurch jeder Zwischenstand öffentlich sichtbar ist und evaluiert werden kann.
 
 \subsection{Frameworks}
 \label{frameworks}
@@ -64,12 +64,12 @@ Mittels \emph{GitHub Actions}\footnote{https://github.com/features/actions/} las
 \subsubsection{OpenStreetMap}
 \label{open_street_map}
 
-Das quelloffene Projekt \emph{OpenStreetMap}\footnote{https://www.openstreetmap.de/} stellt Geodaten über Verkehrswege und Flächennutzung zur Verfügung, welche für die Erstellung von Kartenmaterial genutzt werden können.
+Das quelloffene Projekt \emph{OpenStreetMap}\footnote{https://www.openstreetmap.de/} stellt Geodaten über Verkehrswege und Flächennutzung zur Verfügung, welche für die Erstellung von Kartenmaterial genutzt werden können. Die durch die OpenStreetMap Community zur Verfügung gestellten Geodaten bilden den überwiegenden Teil der im Rahmen des Projekts genutzt Datenbasis. Weitere Datenquellen sind...\todo[inline]{weitere Datenquellen hier aufführen?} 
 
 \subsubsection{Mapbox}
 \label{mapbox}
 
-Der Dienst \emph{Mapbox}\footnote{https://www.mapbox.com/} nutzt die von OpenStreetMap bereitgestellten Geoinformationen und stellt eine Programmierstelle zur Verfügung, um diese in eigene Applikationen einzubinden und bietet darüber hinaus die Möglichkeit, Markierungen, Animationen und zusätzliche Ebenen zu definieren.
+Der Dienst \emph{Mapbox}\footnote{https://www.mapbox.com/} nutzt die von OpenStreetMap bereitgestellten Geoinformationen und stellt eine Programmierstelle zur Verfügung, um diese in eigene Applikationen einzubinden und bietet darüber hinaus die Möglichkeit, Markierungen, Animationen und zusätzliche Ebenen zu definieren. Das Layout der im Projektverlauf erstellten Karten nutzt den großen Funktionsumfang von Mapbox. 
 
 \subsection{Methodik}
 \label{methodik}
@@ -77,34 +77,34 @@ Der Dienst \emph{Mapbox}\footnote{https://www.mapbox.com/} nutzt die von OpenStr
 \subsubsection{Darstellung der Mobilitätsinfrastruktur durch Graphen}
 \label{darstellung_der_mobiltaetsinfrastruktur_durch_graphen}
 
-Im Kontext der Verkehrsanalyse wird die Infrastruktur mithilfe von Geodaten in Form Graphen abgebildet, welche wiederum aus Knoten und Kanten bestehen. Als Knoten werden in diesem Kontext sowohl Haltestellen des \ac{ÖPNV} als auch Punkte des Wege- und Straßennetzes dargestellt. Kanten wiederum verbinden jeweils zwei Knoten, welche von einer Person beim Zurücklegen eines Weges genutzt werden können.
+Im Kontext der Verkehrsanalyse wird die Infrastruktur mithilfe von Geodaten in Form von Graphen abgebildet, welche wiederum aus Knoten und Kanten bestehen. Als Knoten werden in diesem Kontext sowohl Haltestellen des \ac{ÖPNV} als auch Punkte des Wege- und Straßennetzes dargestellt. Kanten wiederum verbinden jeweils zwei Knoten, welche von einer Person beim Zurücklegen eines Weges genutzt werden können.
 
-Eine Herausforderung bei der Analyse multimodaler Verkehrsrouten stellt die Verbindung der Netze einzelner Verkehrsmittel dar. OpenStreetMap stellt zwar die Verkehrsnetze für jedes im Rahmen dieser Arbeit analysierte Verkehrsmittel bereit, jedoch sind zusätzliche Kanten notwendig, um den Wechsel von einem Verkehrsmittel zum anderen abzubilden. Das Hinzufügen der Kanten ist als Vorverarbeitungsschritt im Rahmen des Analyseprozesses implementiert worden.
+Eine zentrale Herausforderung bei der Analyse multimodaler Verkehrsrouten ist die Verbindung der Netze einzelner Verkehrsmittel. OpenStreetMap umfasst die Verkehrsnetze für jedes im Rahmen dieser Arbeit analysierte Verkehrsmittel bereit, jedoch werden diese nur isoliert zur Verfügung gestellt. Um die Verkehrsnetze interaktiv nutzbar zu machen, sind zusätzliche Kanten notwendig, um den Wechsel von einem Verkehrsmittel zum anderen abzubilden. Das Hinzufügen der Kanten ist als Vorverarbeitungsschritt im Rahmen des Analyseprozesses implementiert worden.
 
 \subsubsection{Isochronen als Erreichbarkeitsmetrik}
 \label{isochronen_als_vergleichbarkeitsmetrik}
 
 Als Isochrone werden sämtliche Orte bezeichnet, die ausgehend von einem gemeinsamen Ausgangspunkt in einem gegebenen Zeitraum erreicht werden können. Im Rahmen dieses Projekts kommt die Limitierung der Verkehrsmittel als zusätzliche Dimension hinzu.
 
- In Abbildung~\ref{isochronen-walk} ist beispielsweise die 20-Minuten-Isochrone ausgehend vom Standort der FOM in der Bismarkstraße in Berlin dargestellt, wobei die möglichen Strecken auf Fußwege beschränkt sind. Auffällig ist die annähernd kreisförmige Form der äußeren Hülle der Isochrone, welche darauf zurückgeführt werden kann, dass eine Person in einer vorgegebenen Zeit zu Fuß annähernd gleich weit in sämtliche Richtungen laufen kann.
+In Abbildung~\ref{isochronen-walk} ist beispielsweise die 20-Minuten-Isochrone ausgehend vom Standort der FOM Hochschule in der Bismarkstraße in Berlin dargestellt, wobei die möglichen Strecken auf Fußwege beschränkt sind. Auffällig ist die annähernd kreisförmige Form der äußeren Hülle der Isochrone, welche darauf zurückzuführen ist, dass eine Person in einer vorgegebenen Zeit zu Fuß annähernd gleich weit in sämtliche Richtungen laufen kann.
 
 \img{isochronen-walk}{isochrone-20min-fom-walk}{width=0.5\textwidth}{20-Minuten-Isochrone ausgehend vom Standort der FOM (zu Fuß)}
 
-Im Gegensatz dazu ist die Isochrone bei der Ausweitung auf das U-Bahn-Netz, welche in Abbildung~\ref{isochrone-subway} dargestellt ist, zum einen weiter ausgedehnt und zum anderen unregelmäßiger und unzusammenhängend. Dies kann durch naheliegende U-Bahn-Stationen und die höhere Geschwindigkeit von U-Bahnen im Vergleich zur Laufgeschwindigkeit erklärt werden.
+Im Gegensatz dazu ist die Isochrone bei der Ausweitung auf das U-Bahn-Netz, welche in Abbildung~\ref{isochrone-subway} dargestellt ist, weiter ausgedehnt und fragmentiert. Dies kann durch naheliegende U-Bahn-Stationen und die höhere Geschwindigkeit von U-Bahnen im Vergleich zur Laufgeschwindigkeit erklärt werden. Die Isochrone erfassen demnach auch die Möglichkeit an der nächsten U-Bahn Station auszusteigen und die weitere Strecke zu Fuß zurückzulegen. 
 
 \img{isochrone-subway}{isochrone-20min-fom-walk-subway}{width=0.5\textwidth}{20-Minuten-Isochrone ausgehend vom Standort der FOM (zu Fuß + U-Bahn)}
 
-Als qualitatives Maß für die Konnektivität eines Punktes dient im Rahmen dieses Projekts der mittlere Radius der konvexen Außenhülle der Isochrone. Auf diese Weise wird die Reichweite betrachtet. Es wird dabei davon ausgegangen, dass die Reichweite bidirektional gültig ist. Entsprechend dieser Metrik ist ein Punkt, von welchem sich andere Orte besonders gut erreichen lassen im Umkehrschluss selbst gut zu erreichen. Die relative Güte der Konnektivität eines Punktes lässt sich im Vergleich mit anderen Punkten ermitteln.
+Als qualitatives Maß für die Anbindungsqualität eines Punktes dient im Rahmen dieses Projekts der mittlere Radius der konvexen Außenhülle der Isochrone. Auf diese Weise wird die Reichweite betrachtet, die ausgehend von einem Ort durschnittliche erreicht werden kann. Es wird dabei davon ausgegangen, dass die Reichweite bidirektional gültig ist. Entsprechend dieser Metrik ist ein Punkt, von welchem sich andere Orte besonders gut erreichen lassen im Umkehrschluss selbst gut zu erreichen. Die relative Güte der Konnektivität eines Punktes lässt sich im Vergleich mit anderen Punkten ermitteln.
 
 \subsubsection{Versuchsaufbau und Vorgehensweise}
 \label{versuchsaufbau_und_vorgehensweise}
 
-Ein Ziel dieser Arbeit ist die Identifikation von Schwachstellen des öffentlichen Verkehrsnetzes der Stadt Berlin. Zu diesem Zweck sollen Orte ermittelt werden, welche entsprechend der in Kapitel \ref{isochronen_als_vergleichbarkeitsmetrik} definierten Metrik eine relativ geringe Konnektivität aufweisen. In einem zweiten Schritt sollen diejenigen Orte mit einer schlechten Anbindung identifiziert werden, welche sich in relativer Nähe zu \acp{POI} - also beispielsweise Industrie- und Gewerbegebieten oder Universitäten und Hochschulen -  befinden.
+Ein Ziel dieser Arbeit ist die Identifikation von Schwachstellen des öffentlichen Verkehrsnetzes der Stadt Berlin. Zu diesem Zweck sollen Orte ermittelt werden, welche entsprechend der in Kapitel \ref{isochronen_als_vergleichbarkeitsmetrik} definierten Metrik eine relativ geringe Anbindungsqualität aufweisen. In einem zweiten Schritt sollen diejenigen Orte mit einer schlechten Anbindung identifiziert werden, welche sich in relativer Nähe zu \acp{POI} - also beispielsweise Industrie- und Gewerbegebieten oder Universitäten und Hochschulen -  befinden.
 
 \paragraph*{Vorbereitung}
 \label{vorbereitung}
 
-Als vorbereitender Schritt sind 10.000 zufällig über das gesamte Stadtgebiet verteilte Punkte generiert worden, wobei unbebaute Flächen, wie Parks, Wälder, Felder, Friedhöfe, sowie Wasserflächen ausgenommen worden sind. Um eine höchstmögliche Vergleichbarkeit zu gewährleisten, bilden diese als Startpunkte die Grundlage für die Analyse von Isochronen. Zur Sicherstellung der Vergleichbarkeit der einzelnen Verkehrsmittel, ist ebenfalls ein fester Wert von 15 Minuten als Berechnungsgrundlage verwendet worden.
+Als vorbereitender Schritt sind 10.000 zufällig über das gesamte Stadtgebiet verteilte Punkte generiert worden, wobei unbebaute Flächen, wie Parks, Wälder, Felder, Friedhöfe, sowie Wasserflächen ausgenommen worden sind. Diese generierten Punkte dinen als Ausgangspunkt für die Berechnung von Isochronen und sind somit auch Ausgangspunkt der im Rahmen des Projekts vorgenommenen Analysen. Zur Sicherstellung der Vergleichbarkeit der einzelnen Verkehrsmittel, ist ein fester Wert von 15 Minuten als Berechnungsgrundlage verwendet worden. \todo[inline]{lasst uns nochmal überlegen, wie wir die Wahl der 15 Min. Isochrone hier rechtfertigen} 
 
 \paragraph*{Verkehrsmittelspezifische Analyse}
 \label{verkehrsmittelspezifische_analyse}
@@ -116,7 +116,7 @@ Um die Abdeckung beziehungsweise die Schwachstellen einzelner Verkehrsmittel zu 
     \item Laden des Graphen für Fußwege (ebenfalls via Overpass API)
     \item Kombination der beiden Graphen
     \item Hinzufügen zusätzlicher Kanten, um Umsteigemöglichkeiten abzubilden
-    \item Iteration über sämtliche generierte Punkte
+    \item Iteration über sämtliche generierten Punkte
 
     \begin{itemize}
         \item Definition des generierten Punktes als Startpunkt
@@ -133,3 +133,5 @@ Die Analyseergebnisse werden im GeoJSON-Format abgelegt, wobei für jeden der 10
 \label{holistische_analyse}
 
 Um die Situation des öffentlichen Personennahverkehrs ganzheitlich beurteilen beziehungsweise präzise Verbesserungsvorschläge machen zu können, sind die oben aufgeführten Schritte ebenfalls unter Verwendung der kombinierten Verkehrsgraphen des öffentlichen Nahverkehrs durchgeführt worden.
+
+\todo[inline]{wenn wir noch Zeit haben: Hier und im Ergebniskapitel den Personaansatz noch einarbeiten. Den hatte er im Rahmen der Präsentation explizit hervorgehoben} 
