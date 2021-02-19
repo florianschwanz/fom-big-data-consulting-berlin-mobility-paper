@@ -3,7 +3,7 @@
 \section{Ergebnispräsentation (Arbeitspaket 4)}
 \label{ergebnispraesentation}
 
-Die Analyseergebnisse werden in Form von interaktiven Karten und begleitenden Texten in Form einer Webapplikation dargestellt, welche auf Firebase Hosting deployed und unter der URL \url{https://berlin-mobility.web.app} erreichbar ist. Die Grundlage der Webapplikation bildet das quelloffene Webapplikationsframework Angular\footnote{https://angular.io/}, welches in Version 10 zum Einsatz kommt.
+Die Analyseergebnisse werden in Form von interaktiven Karten und begleitenden Texten in Form einer Webapplikation dargestellt, welche über Firebase Hosting bereitgestellt und unter der URL \url{https://berlin-mobility.web.app} erreichbar ist. Die Grundlage der Webapplikation bildet das quelloffene Webapplikationsframework Angular\footnote{https://angular.io/}, welches in Version 10 zum Einsatz kommt.
 
 \img{app-01-landing-page}{app-01-landing-page}{width=0.5\textwidth}{Startseite der Webapplikation}
 
@@ -17,20 +17,20 @@ Die Webapplikation ist in zwei Bereiche unterteilt, welche im Folgenden beschrie
 \subsection{Visualisierung der Analyseergebnisse}
 \label{visualisierung_der_analyseergebnisse}
 
-Das zentrale Konzept bei der Visualisierung der Analyseergebnisse ist die Verwendung von Scrollen als einziges Mittel der Navigation. Durch Scrollen kann sich der Leser durch die Abschnitte bewegen. Gleichzeitig werden durch das Scrollen Overlays auf Karten geändert und Animationen ausgelöst.  Um dem Leser eine Einführung in das Thema zu geben, werden zunächst die Hintergründe des Projekts beschrieben. Dabei werden sowohl das Berlin Mobilitätsgesetz, als auch die daran geäußerte Kritik ausgeführt.
+Das zentrale Konzept bei der Visualisierung der Analyseergebnisse ist die Verwendung von Scrollen als einziges Mittel der Navigation. Durch Scrollen kann sich der Leser durch die Abschnitte bewegen. Gleichzeitig werden durch das Scrollen Informationsebenen (sogenannte Overlays) auf den Karten geändert und Animationen ausgelöst.  Um dem Leser eine Einführung in das Thema zu geben, werden zunächst die Hintergründe des Projekts beschrieben. Dabei werden sowohl das Berlin Mobilitätsgesetz, als auch die daran geäußerte Kritik ausgeführt.
 
-Im zweiten Abschnitt werden dem Leser die Analyseergebnisse des Arbeitspakets 1 erläutert (siehe Kapitel~\ref{arbeitspaket_1_beschreibung_der_ist_situation}). Dabei wird eine Kombination aus Kartenmaterial, Overlays und erklärendem Text dargestellt, wobei sich die Overlays und Marker auf der Karte auf den jeweils dargestellten Beleittext beziehen. Die Interaktionsmöglichkeiten für den Leser sind bewusst gering gehalten. Lediglich die Marker auf einer Karte können durch das Bewegen der Maus über Textstellen, die sich auf einen Marker beziehen.
+Im zweiten Abschnitt werden dem Leser die Analyseergebnisse des Arbeitspakets 1 erläutert (siehe Kapitel~\ref{arbeitspaket_1_beschreibung_der_ist_situation}). Dabei wird eine Kombination aus Kartenmaterial, Overlays und erklärendem Text dargestellt, wobei sich die Overlays und Marker auf der Karte auf den jeweils dargestellten Begleittext beziehen. Die Interaktionsmöglichkeiten für den Leser sind bewusst gering gehalten. Lediglich die Marker auf einer Karte können durch das Bewegen der Maus über Textstellen, die sich auf einen Marker beziehen.
 
 Im dritten Abschnitt wird im Anschluss anhand zweier Beispiele die Bedeutung und Funktionsweise von Isochronen erläutert. Eine animierte Karte mit entsprechender Legende vermittelt dem Leser anschaulich, wie sich Isochronen bei Veränderung des zeitlichen Parameters verändern. Ebenfalls wird ersichtlich, inwiefern sich Isochronen unterschiedlicher Verkehrsmittel unterscheiden.
 
-Der vierte Abschnitt des Story-Bereichs stellt die Ergebnisse des Arbeitspakets 2 dar (siehe Kapitel~\ref{arbeitspaket_2_aufzeigen_von_schwachstellen_der_vorhandenen_infrastruktur}), welches sich mit den Schwachstellen des Berliner Verkehrsnetzes befasst. Um die Nachvollziehbarkeit zu gewährleisten, wird dem Leser zuvor die in Kapitel~\ref{verkehrsmittelspezifische_analyse} skizzierte Vorgehensweise beschrieben. Die Analyseergebnisse sind mittels \emph{Turf}\footnote{http://turfjs.org/docs/\#hexGrid} zu Hexagonen aggregiert und farblich kodiert. Gut angebundene Gebiete sind dabei grün hinterlegt, schlecht angebundene hingegen magenta.
+Der vierte Abschnitt des Story-Bereichs stellt die Ergebnisse des Arbeitspakets 2 dar (siehe Kapitel~\ref{arbeitspaket_2_aufzeigen_von_schwachstellen_der_vorhandenen_infrastruktur}), welches sich mit den Schwachstellen des Berliner Verkehrsnetzes befasst. Um die Nachvollziehbarkeit zu gewährleisten, wird dem Leser zuvor die in Kapitel~\ref{verkehrsmittelspezifische_analyse} skizzierte Vorgehensweise beschrieben. Die Analyseergebnisse sind mittels \emph{Turf}\footnote{http://turfjs.org/docs/\#hexGrid} zu Hexagonen aggregiert und farblich kodiert. Gut angebundene Gebiete sind dabei grün hinterlegt, schlecht angebundene Gebiete sind dagegen magentafarben gekennzeichnet.
 
 Der Fokus des finalen Abschnitts liegt auf der Präsentation der Lösungsansätze (siehe Kapitel~\ref{arbeitspaket_3_ableiten_von_handlungsempfehlungen}). Die fünf Personas werden hierbei nacheinander beschrieben. Dabei werden die zum jeweiligen Szenario gehörigen Orte, Verkehrslinien und Haltestellen auf der Karte hervorgehoben. Ein dynamischer Zoom zentriert den Kartenausschnitt, welcher durch das jeweilige Szenario beschrieben ist.
 
 \subsection{Interaktives Mobilitäts-Dashboard}
 \label{interaktives_mobilitaets_dashboard}
 
-Um der Kritik gefühlter Intransparenz, die in Kapitel~\ref{problems} beschrieben ist, entgegen zu wirken, wurde ein interaktives Dashboard entwickelt. Dieses Dashboard ermöglicht es Bürgerinnen und Bürgern sich selbst mit den Daten und Erkenntnissen zu beschäftigen, die als Grundlage der Mobilitätsentscheidungen des Senats dienen.
+Um der Kritik gefühlter Intransparenz, die in Kapitel~\ref{problems} beschrieben ist, entgegen zu wirken, wurde ein interaktives Dashboard entwickelt. Dieses Dashboard ermöglicht es Bürgerinnen und Bürgern sich selbst ohne spezifisches Vorwissen mit den Daten und Erkenntnissen zu beschäftigen, die als Grundlage der Mobilitätsentscheidungen des Senats dienen.
 
 Auf mehreren Verkehrsmittelspezifischen Unterseiten und einer Seite mit verkehrsmittelübergreifenden Information werden Bürgerinnen und Bürgern mehr Details präsentiert als die, die während der Story vorgestellt werden. Durch die Interaktionsmöglichkeiten der Webseite können Webseitenbesucherinnen und -besucher die Verkehrssituation verschiedener Orte innerhalb der Stadt vergleichen.
 
