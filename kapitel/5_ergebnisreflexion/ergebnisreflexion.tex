@@ -3,23 +3,9 @@
 Die in den vorangegangen Kapiteln beschriebenen Analyseansätze und Visualisierungsformen ergeben einen Prototypen für die datengetriebene Analyse und Gestaltung der Berliner Verkehrsinfrastruktur. Durch die gezielte Weiterentwicklung der Analyse sowie der zur interaktiven Datenexploration entwickelten Web-App, könnte ein umfangreiches Werkzeug für Städteplaner und die Berliner Senatsverwaltung für Umwelt, Verkehr und Klimaschutz geschaffen werden. Im Folgenden werden die Projektergebnisse zusammenfassend dargestellt. Ausgehend davon werden die Limitierungen des gewählten Ansatzes beschrieben und mögliche nächste Schritte skizziert.
 
 \subsection{Zusammenfassung der Projektergebnisse}
-Die in Kapitel \ref{ergebnisse} gezeigten Analyseansätze ermöglichen eine detaillierte Analyse der in Bezug auf die stark variierende Anbindungsqualität im Stadtgebiet. Ausgehend von der Berechnung der durchschnittlichen Erreichbarkeit fest definierte Bereiche mithilfe von Isochronen, können Unterschiede in der Anbindungsqualität bzw. hinsichtlich der Qualität der vorhandenen Verkehrsinfrastruktur an unterschiedlichen Orten im Stadtgebiet offengelegt werden.
+Die in Kapitel \ref{projekt_und_analyseergebnisse} gezeigten Analyseansätze ermöglichen eine detaillierte Analyse der in Bezug auf die stark variierende Anbindungsqualität im Stadtgebiet. Ausgehend von der Berechnung der durchschnittlichen Erreichbarkeit fest definierte Bereiche mithilfe von Isochronen, können Unterschiede in der Anbindungsqualität bzw. hinsichtlich der Qualität der vorhandenen Verkehrsinfrastruktur an unterschiedlichen Orten im Stadtgebiet offengelegt werden.
 
 Aus den Ergebnissen ist geht deutlich hervor, dass die innerstädtischen Wohngebiete bereits gut angebunden sind. Bei der Anbindung von Industrie, Gewerbe und Handel gibt es dahingegen Handlungsbedarf. Zudem scheint in den Außenbezirken eine stärkere Verzahnung des bereits bestehenden ÖPNV Angebotes notwendig zu sein. Die Außenbezirke sind häufig auf einzelne Linien sowie einzelne Verkehrsmittel angewiesen.
-
-%Florian L.: Die folgenden auskommentierten Sätze würde ich löschen
-% Des Weiteren ist zur besseren Vernetzung unterschiedlicher Verkehrsmittel die Entwicklung und der Ausbau von Mirkomobilitätskonzepten (bspw. Jelbi) zu prüfen und zu fördern.
-% Denn nur mit einem breiten diversen Angebot kann die nötige Tiefe und nachhaltige Wende in Berlin eingeleitet werden.​​
-
-% Der Plan zum Ausbau der Straßenbahn in die nord-westlichen Bezirke hat großes Potenzial.
-% \todo[inline]{QUELLE FINDEN!!! \% }
-% Der Senat hat ähnliche Bedarfe im Süden identifiziert, dieser Bedarf kann ausgehend von der Analyse bestätigt werden.
-% \todo[inline]{QUELLE FINDEN!!! \% }
-
-% Wie bereits erwähnt kann damit ein breites Angebot genutzt werden. Dies wiederum führt zu einer Entlastungen in den entsprechenden Verkehrsmitteln oder Angeboten der Mobilität.
-
-
-% \todo[inline]{MEHR !!! \% mehr Inhalt zur Anreicherung}
 
 \subsection{Limitierungen}\label{limitierung}
 \subsubsection{Datenverfügbarkeit und Qualität}
@@ -41,8 +27,6 @@ Für die Analyse der Verkehrsinfrastruktur werden, wie in Kapitel \ref{projektum
 
 \end{itemize}
 
-\todo[inline]{Wenn was fehlt: Bitte ergänzen}
-
 \subsubsection{Komplexität der Analyse}
 Ausgehend von der limitierten Datenverfügbarkeit und -qualität sowie den limitierten Ressourcen ergeben sich auch hinsichtlich der Komplexität der Analyse Limitierungen.
 
@@ -53,35 +37,28 @@ Ausgehend von der limitierten Datenverfügbarkeit und -qualität sowie den limit
     \item Bei der Berechnung der Anbindungsqualität werden keine „Penalty“ eingerechnet. So werden weder für die Nutzung des Autos Zeiten für die Parkplatzsuche, noch bei der Nutzung des ÖPNV Zeiten für Umstiege (bspw. für die Wegstrecke von einer U-Bahnlinie zu einer S-Bahnlinie)berücksichtigt.
     \item Aktuell werden ausschließlich 15 Minuten Isochrone analysiert​. Die Berechnung von Isochronen ist ressourcenintensiv, sodass zwischen der Berechnung unterschiedlicher Isochrone abgewogen werden musste. Die 15 Minuten Isochrone eignen sich besonders zur Berechnung der Anindungsqualität, weil ...
 \end{itemize}
-\todo[inline]{Wenn was fehlt: Bitte ergänzen; letzten Bulletpoint vervollständigen}
+\todo[inline]{letzten Bulletpoint vervollständigen}
 
 
 \subsubsection{Begrenztes Domänenwissen}
-Im Rahmen des Projekts wurden Expert*innen der Senatsverwaltung für Umwelt, Verkehr und Klimaschutz punktuell in die Entwicklung des Prototyps eingebunden. Für die Weiterenwicklung des Analyseansatzes ist eine stärkere Einbeziehung von Domänenwissen notwendig. Entsprechendes Domänenwissen wird auch auch für die Validierung der in Kapitel \ref{ergebnisse} vorgestellten Handlungsvorschläge vorausgesetzt.
-
-\todo[inline]{Wenn was fehlt: Bitte ergänzen}
+Im Rahmen des Projekts wurden Expert*innen der Senatsverwaltung für Umwelt, Verkehr und Klimaschutz punktuell in die Entwicklung des Prototyps eingebunden. Für die Weiterenwicklung des Analyseansatzes ist eine stärkere Einbeziehung von Domänenwissen notwendig. Entsprechendes Domänenwissen wird auch auch für die Validierung der in Kapitel \ref{projekt_und_analyseergebnisse} vorgestellten Handlungsvorschläge vorausgesetzt.
 
 \subsection{Ausblick}
 
 \subsubsection{Anreicherung der Analyse}
 Die Anreicherung der Analyse - ausgehend von den in den Kapiteln 5.2.1 und 5.2.2 beschriebenen Limitierungen - würde die  Genauigkeit der Prädiktionen der Analyse weiter steigern. Demnach sollte eine Erweiterung der Datengrundlage sowie eine Steigerung der Analysekomplexität angestrebt werden. Insbesondere die Berücksichtigung von Datenpunkten bezüglicher der Taktung und Auslastung des ÖPNV wäre zielführend. Zudem würde die Einbindung von „Penaltys“ (bspw. Zeit für die Parkplatzsuche bei Nutzung eines PKW) eine Feinjustierung des Analyseansatzes ermöglichen.
 
-\todo[inline]{Wenn was fehlt: Bitte ergänzen, Referenz zu den Kapiteln 5.2.1 und 5.2.2 richtig formatieren}
-
 \subsubsection{Finalisierung des interaktiven Mobililitätskompasses}
-Wie in Kapitel \ref{website} beschrieben, verfügt der Prototyp bereits heute über einen interaktiven Modus. Mithilfe des interaktiven Mobilitätskompasses, bzw. Dashboards lassen sich individuelle Analysen der Verkehrsinfrastruktur durchführen. In Kapitel \ref{einleitung} wird dargelegt, dass die fehlende Einbindung der Bürger*innen zu Kritik an der Umsetzung des Mobilitätsgesetzes führt. Durch den gezielten Ausbau des interaktiven Mobilitätskompasses könnte ein Werkzeug für die die Bürger*innenkommunikation geschaffen werden, welches von Bürger*innen genutzt werden könnte um sich über den aktuellen Stand der Verkehrsinfrastrukutr zu erkundigen. Auf diese Weise könnten Bürger*innen die Notwendigkeit einzelner Infrastrukturmaßnahmen gezielt nachvollziehen. Es könnte auch ein Votingsystem zur Priorisierung von Infrastrukturmaßnahmen eingeführt werden, um das Gefühl der Teilhabe zu steigern.
+Wie in Kapitel \ref{ergebnispraesentation} beschrieben, verfügt der Prototyp bereits heute über einen interaktiven Modus. Mithilfe des interaktiven Mobilitätskompasses, bzw. Dashboards lassen sich individuelle Analysen der Verkehrsinfrastruktur durchführen. In Kapitel \ref{problems} wird dargelegt, dass die fehlende Einbindung der Bürger*innen zu Kritik an der Umsetzung des Mobilitätsgesetzes führt. Durch den gezielten Ausbau des interaktiven Mobilitätskompasses könnte ein Werkzeug für die die Bürger*innenkommunikation geschaffen werden, welches von Bürger*innen genutzt werden könnte um sich über den aktuellen Stand der Verkehrsinfrastrukutr zu erkundigen. Auf diese Weise könnten Bürger*innen die Notwendigkeit einzelner Infrastrukturmaßnahmen gezielt nachvollziehen. Es könnte auch ein Votingsystem zur Priorisierung von Infrastrukturmaßnahmen eingeführt werden, um das Gefühl der Teilhabe zu steigern.
 
-\todo[inline]{Wenn was fehlt: Bitte ergänzen; Abbildung unten richtig formatieren}
 
 \img{dashboard001}{dashboard001}{width=14cm}{individuelles Dashboard (eigene Darstellung)}
 
 \subsubsection{Entwicklung eines Planungstools}
 Der interaktive Mobilitätskompass dient zudem als Ausgangspunkt für die Entwicklung eines umfangreichen Planungstools für Städteplaner und Entscheider*innen in der Berliner Senatsverwaltung für Umwelt, Verkehr und Klimaschutz. Zusätzlich zu der deskriptiven Analyse der Ist-Situation könnten beispielsweise Streckenverläufe die sich noch in der Planung befinden, in die Graphen-Struktur eingepflegt werden. Auf diese Weise könnte simuliert werden, wie sich die Realisierung eines bestimmten Infrastrukturprojekts (bspw. die Erweiterung einer S-Bahnstrecke) auf die Anbindungsqualität im betroffenen Stadtgebiet auswirken würde. Dadurch könnten die Potenziale von Infrastrukturvorhaben unkompliziert und visuell evaluiert werden.
 
-\todo[inline]{Wenn was fehlt: Bitte ergänzen}
-
 \subsubsection{Entwicklung eines Mobilitätsindexes}\label{mobwob_index}
-Durch die fortlaufende Erweiterung und Aktualisierung der Datengrundlage könnte auf Basis des, in den Kapiteln \ref{projektumsetzung} und \ref{ergebnisse} vorgestellten, Analyseansatz ein fortlaufender Mobilitätsindex entwickelt werden. Unter Berücksichtigung relevanter Faktoren wie Handels-, Industrie- und Gewerbedichte, Einwohnerdichte, Taktung, Verfügbarkeit und Geschwindigkeit könnten der Mobilitätsindex eingesetzt werden um Veränderungen in der Anbindungsqualität über die Zeit feststellen zu können und um weitere Maßnahmen zu identifizieren. 
+Durch die fortlaufende Erweiterung und Aktualisierung der Datengrundlage könnte auf Basis des, in den Kapiteln \ref{projektumsetzung} und \ref{projekt_und_analyseergebnisse} vorgestellten, Analyseansatz ein fortlaufender Mobilitätsindex entwickelt werden. Unter Berücksichtigung relevanter Faktoren wie Handels-, Industrie- und Gewerbedichte, Einwohnerdichte, Taktung, Verfügbarkeit und Geschwindigkeit könnten der Mobilitätsindex eingesetzt werden um Veränderungen in der Anbindungsqualität über die Zeit feststellen zu können und um weitere Maßnahmen zu identifizieren. 
 
 Die Entwicklung eines Mobilitätsindexes mit Fokus auf die durch die Verkehrsinfrastruktur gewährleistete Anbindungsqualität, wäre eine wertvolle Ergänzung zum bestehenden Bundesländerindex Mobilität \& Umwelt.\footcite{Bundeslaenderindex:1}
 
@@ -103,32 +80,3 @@ Das abbilden des Ausbaus der Nutzung etc. zeigt in einem stetigen Mobilitätsind
 Des Weiteren lassen sich mit einer immer komplexeren Formalisierung eines ganzheitlichen Indexes Städte, Bundesländer oder sogar Landkreise vergleichen. Das ermöglicht Planern aber auch Förderer, Mittel und Maßnahmen an der bzw. den geeigneten Stellen zu platzieren.
 
 
-\todo[inline]{Quelle für den Mob. Index (footcite und Bild) zu einer neueren Quelle aktualisieren, Abbildungsverweis einbauen, ggf. Abbildung zur Hervorhebung möglicher Faktoren die bei unseren Mobilitätsindex einfließen könnten erstellen .... CHECK, CHECK und CHECK .. letzteres sieht aber noch nicht Hipp genug aus!!! ... pptx mit dem Text liegt im abbildungs Ordner}
-
-% Kommentar von Florian L.: Den folgenden Text würde ich rausnehmen. Habe den Teil überarbeitet und im Absatz oberhalb aufgeriffen.
-
-% Mit mehr Ressourcen könnte auch die Ausweitung oder Reduzierung der Domäne betrachtet werden. Darunter zählt die Urbanisierung sowie die Suburbanisierung.
-% Ersteres ist die allgemeinbekannte Landflucht und letzteres ist die Stadflucht. Beide beschreiben die Veränderung von Regionen oder Domänen.
-% Diese Einflussnahme sollte mit Experten zusammen weiter betrachtet werden und ggf. Maßnahmen für eine Stabilisierung bzw. für ein sinnvolles Gleichgewicht in der Urbanisierung oder Suburbanisierung gefunden werden.
-
-% Auch die Sozioökonomischen und ökologischen Perpektiven sollten vertieft werden.
-% %Letzteres kann den Forstämtern dabei helfen Wild und deren Pupolation besser zu Steuern aber auch das schaffen neuer Räume für gefärdete Arten zeitig auszuschreiben.
-% Den nicht trennscharf eingeführten Begriff der Sozioökonomie könnte unteranderem die Entwicklung eines fortlaufenden Mobilitätsindex, um Veränderungen in der Anbindungsqualität feststellen zu können und zur Identifizierung weitere weitere Maßnahmen.
-
-% \todo[inline]{AUFFÜHREN UND QUELLEN NUTZEN !!! \% aufzeigen das keine Trennschärfe existiert und ggf. ein oder zwei Aussagen hinzufügen}
-
-% Hierbei könnten sowohl Ökologische aber auch Ökonomische Aspekte verstärkt gewichtet werden. %Damit könnten sich die Bewohner oder Nutzer einer Domäne vielleicht besser identifizieren.
-% Auch der Vergleich mit anderen Städten oder Landkreisen könnte hier wichtig sein. Es wurde nur der Ballungsraum Berlin betrachtet und das Umland wurde nicht betrachtet. Das schmälert das Gewicht der Pendler. Alles in Allem muss der Mobilitätsindex Formalisiert werden.
-
-% Gewichte die in einem Mobilitätsindex ein Rolle spielen könnten unter anderm Anteil an Miet- und Eigentumswohnungen sowie die Einwohner-,
-% Gewerbe oder Industriedichte. Auch die durchschnittliche Geschwindigkeit aller möglichen Verkehrsmittel,
-% die ÖPNV Streckendichte (verschiedene Medien summieren), die ÖPNV Haltestellendichte oder die Straßendichte mit Fahrradwegen und PKW/LKW Wegen.
-% Als negativbeispiel kann der formalisierte Mobilitätsindex genannt werden.
-
-%\includegraphics{​​​​../abbildungen/Mob-Index.jpg}
-%\includegraphics[width=11cm]{abbildungen/mob-index} \\
-%\img{mob-index}{width=14cm}{Mobilitätsindex \footcite{Bundeslaenderindex:3}}
-%\img{​​​​mob-index}​{​​​​width=11cm}​​​​{​​​​Mobilitätsindex}​​​​
-
-%\cite{DUMMY:1}
-%\footcite{Bundesländerindex:3}
