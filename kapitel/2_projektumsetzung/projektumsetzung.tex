@@ -11,7 +11,7 @@ Die Umsetzung des Projekts ist unter Verwendung der agilen Methodiken \emph{Kanb
 \subsubsection{Kanban}
 \label{kanban}
 
-Kanban ist ein weitverbreitetes agiles Vorgehensmodell in der Softwareentwicklung. Kanban ermöglicht durch die konsequente Visualisierung des Status einzelner Arbeitspakete eine transparente Darstellung des Projektfortschritts. Gleichzeitig verhindert die durchgehende Verfolgung des \ac{WIP}, dass das Projektteam an zu vielen Aufgaben parallel arbeitet.
+\emph{Kanban} ist ein weitverbreitetes agiles Vorgehensmodell in der Softwareentwicklung. Kanban ermöglicht durch die konsequente Visualisierung des Status einzelner Arbeitspakete eine transparente Darstellung des Projektfortschritts. Gleichzeitig verhindert die durchgehende Verfolgung des \ac{WIP}, dass das Projektteam an zu vielen Aufgaben parallel arbeitet.
 
 \subsubsection{Extreme Programming}
 \label{extreme_programming}
@@ -36,12 +36,12 @@ Der folgende Abschnitt beschreibt die während des Projekts verwendeten Werkzeug
 \subsubsection{Firebase}
 \label{firebase}
 
-\emph{Firebase}\footnote{https://firebase.google.com/} bietet als sogenanntes \ac{BaaS} die Möglichkeit, Datenbanken und Webhosting als Dienstleistung zu nutzen, ohne eine dedizierte Infrastruktur aufsetzen zu müssen, wodurch es sich insbesondere für Experimente und Prototypen eignet. Firebase wird für das Hosting der im Rahmen des Projekts entwickelten Webapplikation verwendet.
+\emph{Firebase}\footnote{https://firebase.google.com/} bietet als sogenanntes \ac{BaaS} die Möglichkeit, Datenbanken und Webhosting als Dienstleistung zu nutzen, wodurch das Aufsetzen einer dedizierten Infrastruktur entfällt. Auf diese Weise eignet es sich insbesondere für Experimente und Prototypen. Firebase wird für das Hosting der im Rahmen des Projekts entwickelten Webapplikation verwendet.
 
 \subsubsection{Github}
 \label{github}
 
-Das Quellcodeverwaltungssystem \emph{GitHub}\footnote{https://github.com/} dient in erster Linie der zentralen Ablage von Quellcode innerhalb eines Projekts und ermöglicht damit die Sychronisation der Entwicklungsstände aller Entwickler eines Projekts. Hinzu kommen die Möglichkeiten, die Änderungshistorie nachzuvollziehen und Änderungen mittels Pull Requests zu reviewen. Der in diesem Projekt entwickelte Code steht unter Open-Source-Lizenzen und ist damit öffentlich einsehbar.
+Das Quellcodeverwaltungssystem \emph{GitHub}\footnote{https://github.com/} dient in erster Linie zur zentralen Ablage von Quellcode innerhalb eines Projekts und ermöglicht damit die Sychronisation der Entwicklungsstände aller Entwickler eines Projekts. Hinzu kommen die Möglichkeiten, die Änderungshistorie nachzuvollziehen und Änderungen mittels Pull Requests zu reviewen. Der in diesem Projekt entwickelte Code steht unter Open-Source-Lizenzen und ist damit öffentlich einsehbar.
 
 \begin{description}
     \item[fom-big-data-consulting-berlin-mobility-model \footnote{https://github.com/fom-big-data/fom-big-data-consulting-berlin-mobility-model}]enthält die Analytics-Komponente inklusive der verwendeten Rohdaten, sowie der für die Aufbereitung geschriebenen Python-Skripte und der Ergebnisse.
@@ -56,20 +56,31 @@ GitHub beinhaltet mit \emph{GitHub Projects}\footnote{https://github.com/feature
 \paragraph*{GitHub Actions}
 \label{github_actions}
 
-Mittels \emph{GitHub Actions}\footnote{https://github.com/features/actions/} lassen sich wiederkehrende Aufgaben basierend auf Änderungen an der Codebasis automatisieren. Im Rahmen dieses Projekts veranlasst beispielsweise die Veröffentlichung einer Quellcodeänderung innerhalb des Frontend-Projekts das automatische Deployment der App nach Firebase, wodurch jeder Zwischenstand öffentlich sichtbar ist und evaluiert werden kann.
+Mittels \emph{GitHub Actions}\footnote{https://github.com/features/actions/} lassen sich wiederkehrende Aufgaben basierend auf Änderungen an der Codebasis automatisieren. Im Rahmen dieses Projekts veranlasst beispielsweise die Veröffentlichung einer Quellcodeänderung innerhalb des Frontend-Projekts das automatische Deployment der Applikation nach Firebase, wodurch jeder Zwischenstand öffentlich sichtbar ist und evaluiert werden kann.
 
-\subsection{Frameworks}
-\label{frameworks}
+\subsection{Frameworks und Datenquellen}
+\label{frameworks_und_datenquellen}
 
 \subsubsection{OpenStreetMap}
 \label{open_street_map}
 
-Das quelloffene Projekt \emph{OpenStreetMap}\footnote{https://www.openstreetmap.de/} stellt Geodaten über Verkehrswege und Flächennutzung zur Verfügung, welche für die Erstellung von Kartenmaterial genutzt werden können. Die durch die OpenStreetMap Community zur Verfügung gestellten Geodaten bilden den überwiegenden Teil der im Rahmen des Projekts genutzt Datenbasis. Weitere Datenquellen sind...\todo[inline]{weitere Datenquellen hier aufführen?} 
+Das quelloffene Projekt \emph{OpenStreetMap}\footnote{https://www.openstreetmap.de/} stellt Geodaten über Verkehrswege und Flächennutzung zur Verfügung, welche für die Erstellung von Kartenmaterial genutzt werden können. Die durch die OpenStreetMap Community zur Verfügung gestellten Geodaten bilden den überwiegenden Teil der im Rahmen des Projekts genutzt Datenbasis.
 
 \subsubsection{Mapbox}
 \label{mapbox}
 
-Der Dienst \emph{Mapbox}\footnote{https://www.mapbox.com/} nutzt die von OpenStreetMap bereitgestellten Geoinformationen und stellt eine Programmierstelle zur Verfügung, um diese in eigene Applikationen einzubinden und bietet darüber hinaus die Möglichkeit, Markierungen, Animationen und zusätzliche Ebenen zu definieren. Das Layout der im Projektverlauf erstellten Karten nutzt den großen Funktionsumfang von Mapbox. 
+Der Dienst \emph{Mapbox}\footnote{https://www.mapbox.com/} nutzt die von OpenStreetMap bereitgestellten Geoinformationen und stellt eine Programmierstelle zur Verfügung, um diese in eigene Applikationen einzubinden und bietet darüber hinaus die Möglichkeit, Markierungen, Animationen und zusätzliche Ebenen zu definieren. Das Layout der im Projektverlauf erstellten Karten nutzt den großen Funktionsumfang von Mapbox.
+
+\subsubsection{Datenquellen}
+\label{datenquellen}
+
+Neben den Informationen zu Verkehrswegen und der Flächennutzung wurden folgende Datenquellen verwendet:
+
+\begin{description}
+    \item[PLZ Einwohner] zur Darstellung der Einwohnerdichte auf Ebene von Postleitzahlbereichen
+    \item[VBB-Fahrplandaten\footcite{Fahrplandaten}] zur Identifikation aller Haltestellen des \ac{ÖPNV}
+    \item[Geschwindig der Uber-Fahrten TODO: Quelle] zur Ermittlung tatsächlich mit dem Auto gefahrener Geschwindigkeiten
+\end{description}
 
 \subsection{Methodik}
 \label{methodik}
@@ -79,7 +90,7 @@ Der Dienst \emph{Mapbox}\footnote{https://www.mapbox.com/} nutzt die von OpenStr
 
 Im Kontext der Verkehrsanalyse wird die Infrastruktur mithilfe von Geodaten in Form von Graphen abgebildet, welche wiederum aus Knoten und Kanten bestehen. Als Knoten werden in diesem Kontext sowohl Haltestellen des \ac{ÖPNV} als auch Punkte des Wege- und Straßennetzes dargestellt. Kanten wiederum verbinden jeweils zwei Knoten, welche von einer Person beim Zurücklegen eines Weges genutzt werden können.
 
-Eine zentrale Herausforderung bei der Analyse multimodaler Verkehrsrouten ist die Verbindung der Netze einzelner Verkehrsmittel. OpenStreetMap umfasst die Verkehrsnetze für jedes im Rahmen dieser Arbeit analysierte Verkehrsmittel bereit, jedoch werden diese nur isoliert zur Verfügung gestellt. Um die Verkehrsnetze interaktiv nutzbar zu machen, sind zusätzliche Kanten notwendig, um den Wechsel von einem Verkehrsmittel zum anderen abzubilden. Das Hinzufügen der Kanten ist als Vorverarbeitungsschritt im Rahmen des Analyseprozesses implementiert worden.
+Eine zentrale Herausforderung bei der Analyse multimodaler Verkehrsrouten ist die Verbindung der Netze einzelner Verkehrsmittel. OpenStreetMap umfasst die Verkehrsnetze für jedes im Rahmen dieser Arbeit analysierte Verkehrsmittel, jedoch werden diese nur isoliert zur Verfügung gestellt. Um die Verkehrsnetze interaktiv nutzbar zu machen, sind zusätzliche Kanten notwendig, um den Wechsel von einem Verkehrsmittel zum anderen abzubilden. Das Hinzufügen der Kanten ist als Vorverarbeitungsschritt im Rahmen des Analyseprozesses implementiert worden.
 
 \subsubsection{Isochronen als Erreichbarkeitsmetrik}
 \label{isochronen_als_vergleichbarkeitsmetrik}
@@ -99,12 +110,12 @@ Als qualitatives Maß für die Anbindungsqualität eines Punktes dient im Rahmen
 \subsubsection{Versuchsaufbau und Vorgehensweise}
 \label{versuchsaufbau_und_vorgehensweise}
 
-Ein Ziel dieser Arbeit ist die Identifikation von Schwachstellen des öffentlichen Verkehrsnetzes der Stadt Berlin. Zu diesem Zweck sollen Orte ermittelt werden, welche entsprechend der in Kapitel~\ref{isochronen_als_vergleichbarkeitsmetrik} definierten Metrik eine relativ geringe Anbindungsqualität aufweisen. In einem zweiten Schritt sollen diejenigen Orte mit einer schlechten Anbindung identifiziert werden, welche sich in relativer Nähe zu \acp{POI} - also beispielsweise Industrie- und Gewerbegebieten oder Universitäten und Hochschulen -  befinden.
+Ein Ziel dieser Arbeit ist die Identifikation von Schwachstellen des öffentlichen Verkehrsnetzes der Stadt Berlin. Zu diesem Zweck sollen Orte ermittelt werden, welche entsprechend der in Kapitel~\ref{isochronen_als_vergleichbarkeitsmetrik} definierten Metrik eine relativ geringe Anbindungsqualität aufweisen.
 
 \paragraph*{Vorbereitung}
 \label{vorbereitung}
 
-Als vorbereitender Schritt sind 10.000 zufällig über das gesamte Stadtgebiet verteilte Punkte generiert worden, wobei unbebaute Flächen, wie Parks, Wälder, Felder, Friedhöfe, sowie Wasserflächen ausgenommen worden sind. Diese generierten Punkte dienen als Ausgangspunkt für die Berechnung von Isochronen und sind somit auch Ausgangspunkt der im Rahmen des Projekts vorgenommenen Analysen. Zur Sicherstellung der Vergleichbarkeit der einzelnen Verkehrsmittel, ist ein fester Wert von 15 Minuten als Berechnungsgrundlage verwendet worden. Dieser Wert beruht auf Heuristiken und der durchschnittlichen Distanz zu einer ÖPNV-Haltestelle von 500 Metern\footcite{cnb}, welche zu Fuß in circa 5 Minuten zurückgelegt werden können.
+Als vorbereitender Schritt sind 10.000 zufällig über das gesamte Stadtgebiet verteilte Punkte generiert worden, wobei unbebaute Flächen, wie Parks, Wälder, Felder, Friedhöfe, sowie Wasserflächen ausgenommen worden sind. Diese generierten Punkte dienen als Ausgangspunkt für die Berechnung von Isochronen und sind somit auch Ausgangspunkt der im Rahmen des Projekts vorgenommenen Analysen. Zur Sicherstellung der Vergleichbarkeit der einzelnen Verkehrsmittel, ist ein fester Wert von 15 Minuten als Berechnungsgrundlage verwendet worden. Dieser Wert beruht auf Heuristiken und der Tatsache, dass in dieser Zeit die durchschnittliche Distanz zur nächsten ÖPNV-Haltestelle von 500 Metern\footcite{cnb} zurückgelegt werden kann. Der Wert ist wiederum bewusst auch nicht zu hoch gewählt worden, um den Fokus auf lokalen Infrastrukturproblemen zu belassen.
 
 \paragraph*{Verkehrsmittelspezifische Analyse}
 \label{verkehrsmittelspezifische_analyse}
@@ -132,4 +143,9 @@ Die Analyseergebnisse werden im GeoJSON-Format abgelegt, wobei für jeden der 10
 \paragraph*{Holistische Analyse}
 \label{holistische_analyse}
 
-Um die Situation des öffentlichen Personennahverkehrs ganzheitlich beurteilen beziehungsweise präzise Verbesserungsvorschläge machen zu können, sind die oben aufgeführten Schritte ebenfalls unter Verwendung der kombinierten Verkehrsgraphen des öffentlichen Nahverkehrs durchgeführt worden.
+Um die Situation des öffentlichen Personennahverkehrs ganzheitlich beurteilen beziehungsweise präzise Verbesserungsvorschläge machen zu können, sind die oben aufgeführten Schritte ebenfalls unter Verwendung der kombinierten Verkehrsgraphen des öffentlichen Nahverkehrs durchgeführt worden. Die ganzheitliche Analye bildet die Grundlage für den daraufbasierenden manuellen Analyseschritt. In diesen sollen diejenigen Orte mit einer schlechten Anbindung identifiziert werden, welche sich in relativer Nähe zu \acp{POI} - also beispielsweise Industrie- und Gewerbegebieten oder Universitäten und Hochschulen - befinden. Diese werden im folgenden als \emph{White Spots} bezeichnet.
+
+\paragraph*{Personaansatz}
+\label{personaansatz}
+
+Die fünf markantesten während der holistischen Analyse identifizierten Orte sollen durch die Kreation von fünf Personas greifbarer gemacht werden. Jede der Personas bildet exemplarisch ein Problemszenario ab, welches sich jeweils auf einen der identifzierten White Spots bezieht. Neben einer persönlichen Problembeschreibung sollen auch mögliche Lösungsansätze skizziert werden.
