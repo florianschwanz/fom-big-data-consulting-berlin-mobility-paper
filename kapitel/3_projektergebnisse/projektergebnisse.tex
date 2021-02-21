@@ -99,8 +99,7 @@ Diese Geschwindigkeit wird selbst in den besser angebundenen Gebieten der Berlin
 
 Während Bürger*innen mit dem Auto in 15~Minuten bis zu 27~Kilometer zurücklegen können, beträgt die maximal erreichbare Distanz mit dem Bus lediglich 4,7~Kilometer. Da es hinsichtlich der Erreichbarkeit von Bushaltestellen im Stadtgebiet keine signifikanten Unterschiede gibt, bietet der Bus im Vergleich mit anderen Verkehrsmitteln eine konstante, aber in Bezug auf die zurücklegbare Distanz stark limitierte Anbindung. Im Durchschnitt lässt sich mit dem Bus innerhalb von 15~Minuten lediglich eine Distanz von ca. 2,9~Kilometer zurücklegen. In der Praxis reduzieren die Taktung und die dadurch entstehenden Wartezeiten die zurückzulegende Distanz zusätzlich. Aus Gründen der Datenverfügbarkeit und der Komplexität wurden  Umstiegs- und Wartezeiten allerdings in der vorliegenden Analyse für alle Verkehrsmittel außer acht gelassen. Dieser Punkt wird im Kapitel~\ref{limitierung} genauer erläutert.
 
-\todo[inline]{Karte einfügen}
-%\img{erreichbarkeit-bus}{erreichbarkeit-bus}{width=14cm}{Abbildung der innerstädtischen 15-Minuten-Isochrone für den Busverkehr}
+\img{erreichbarkeit-bus}{erreichbarkeit-bus}{width=14cm}{Abbildung der innerstädtischen 15-Minuten-Isochrone für den Busverkehr}
 
 Die Analyse zeigt auch, dass die Anbindungsqualität in Richtung der Außenbezirke leicht abnimmt. Das kann insbesondere durch fehlende Umsteigemöglichkeiten erklärt werden. Weite Teile der Außenbezirke werden durch einzelne Linien bedient, was sich negativ auf die Flexibilität und Erreichbarkeit auswirkt. Wenn weder Bus, Straßenbahn noch U-Bahn oder S-Bahn eine zuverlässige Anbindung an den ÖPNV bieten, ist der Individualverkehr häufig die einzige verbleibende Option für Anwohner*innen in den Außenbzirken.
 
@@ -126,9 +125,7 @@ Die isolierte Betrachtung der Verkehrsmittel ermöglicht Einblicke in die Heraus
 
 Für diese verkehrsmittelübergreifende Analyse werden die Daten aller relevanten Verkehrsmittel miteinander verknüpft. Dadurch können bei der Berechnung der Anbindungsqualität Umstiege und Wechsel zwischen Verkehrsmitteln berücksichtigt werden. Das Bedeutet, dass durch die verkehrsmittelübergreifenden 15-Minuten-Isochronen alle Wege berechnet werden, von einem gegebenen Ort in 15~Minuten zurückgelegt werden können. Die verkehrsmittelübergreinfenden Isochronen bilden demnach die Grundlage für die datengestützte Identifizierung übergreifender Infrastrukturprobleme.
 
-\img{erreichbarkeit-opnv}{erreichbarkeit-opnv.png}{width=14cm}{Abbildung der innerstädtischen 15-Minuten-Isochrone aggregiert für den gesamten öffentlichen Personennahverkehr in Berlin}
-
-\todo{echte Karte einfügen}
+\img{erreichbarkeit-opnv}{erreichbarkeit-opnv}{width=14cm}{Abbildung der innerstädtischen 15-Minuten-Isochrone aggregiert für den gesamten öffentlichen Personennahverkehr in Berlin}
 
 Die verkehrsmittelübergreifende Analyse der Anbindungsqualität zeigt, dass sich die Orte mit der verhältnismäßig besten Anbindung in den zentralen Bezirken befinden. Insbesondere die Bürger*innen im Ortsteil Gesundbrunnen und im angrenzenden Arnimkiez haben bereits heute Zugang zu einer engmaschigen Verkehrsinfrastruktur. Gleiches gilt für das Gebiet um die Friedrichstraße und das westliche Ende der Torstraße sowie das Gebiet um den Bahnhof Potsdamer Platz. Auch im Südosten der Stadt ist grundsätzlich eine dichte Verkehrsinfrastruktur gegeben. Dabei stechen insbesondere die Gebiete um den Bahnhof Ostkreuz und den Bahnhof Baumschulenweg sowie das Gebiet zwischen den Bahnhöfen Neukölln und Hermannstraße hervor.
 
@@ -147,7 +144,19 @@ Die fünf priorisierten Orte sind über das gesamte Stadtgebiet verteilt. Sie um
 \paragraph{Detailbetrachtung der Verkehrsinfrastruktur am Industriestandort Spandau}
 Im östlichen Teil Spandaus wird ausgehend von der Betrachtung der Geodaten eine sehr hohe Gewerbedichte festgestellt. Neben dem Ausbildungszentrum der Berliner Polizei befinden sich hier mehrere Möbelhäuser, zwei Kraftwerke, ein Zementwerk und ein Klärwerk. Die Bevölkerungsdichte ist im näheren Umfeld relativ niedrig. Da sich hier jedoch die direkten Pendlerrouten aus dem stark bevölkerten Teil Spandaus und Falkensee schneiden, entsteht ein besonders hohes Pendleraufkommen in beide Verkehrsrichtungen. Laut dem Nahverkehrsplan des Landes Berlin befindet sich hier einer der am meisten ausgelasteten Netzbereiche.
 
-\todo[inline]{Abbildung für den whitespot einfügen}
+\begin{figure}
+    \centering
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=7cm]{persona-spandau-01}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=7cm]{persona-spandau-02}
+    \end{subfigure}
+    \caption{Persona Industriestandort Spandau}
+    \label{persona-spandau}
+\end{figure}
 
 Für den motorisierten Individualverkehr und den Busverkehr bildet der verlängerte Spandauer Damm die Hauptverkehrsader. Durch das hohe Pendleraufkommen reduziert sich jedoch die Durchschnittsgeschwindigkeit des Verkehrs gerade zu den Stoßzeiten merklich.
 
@@ -162,7 +171,19 @@ Aufgrund der Mischung aus Wohn- und Gewerbegebiet entsteht in Charlottenburg-Nor
 
 Trotz geografischer Nähe zur Ringbahn weist dieses Gebiet durch eine geringe Stationsdichte eine schlechte Anbindung an den ÖPNV auf. Lediglich die Buslinie~128 ist fußläufig erreichbar. Um zur nächsten S-Bahnstation (Beusselstraße) zu gelangen, muss ein Fußweg von 28~Minuten zurückgelegt werden. Zur nächsten U-Bahnstation (Jakob-Kaiser-Platz) beträgt der Fußweg sogar 30~Minuten. Die direkte Anbindung an die Stadtautobahn ermöglicht außerhalb der Stoßzeiten eine sehr gute Verbindung mit dem motorisierten Individualverkehr. Auch während des verstärkten Verkehrsaufkommens in den Morgen- und Abendstunden bietet der Individualverkehr die schnellste Verbindung.
 
-\todo[inline]{Abbildung für den whitespot einfügen}
+\begin{figure}
+    \centering
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=7cm]{persona-charlottenburg-01}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=7cm]{persona-charlottenburg-03}
+    \end{subfigure}
+    \caption{Persona Urban Tech Republic - TXL}
+    \label{persona-charlottenburg-nord}
+\end{figure}
 
 Als besondere Herausforderung für den Verkehr in Charlottenburg-Nord gilt der Ausbau des ehemaligen Flughafens TXL zum Innovations- und Entwicklungsstandort. Durch die große Anzahl neuer Arbeitsplätze, die hier entstehen sollen, wird prognostiziert, dass das Verkehrsaufkommen merklich steigen wird.\footcite{UrbanTechRepublic} Aufgrund der Begrenzung durch den Berlin-Spandauer-Schifffahrtskanal im Norden und Osten sowie durch den Westhafenkanal im Süden gestaltet sich die Anbindung an die vorhandene Verkehrsinfrastruktur in angrenzenden Gebieten als schwierig.
 
@@ -176,7 +197,19 @@ Um den zukünftigen Innovationsstandort Urban Tech Republic an das bestehende Ö
 \paragraph{Detailbetrachtung der Verkehrsinfrastruktur am Gewerbe- und Industriegebiet Landsberger Allee}
 Die Gegend rund um die Landsberger Allee, zwischen den Querstraßen Weißenseer Weg und Rhinstraße ist gekennzeichnet durch eine Vielzahl von Gewerbeflächen und Industrieanlagen. Zu den markantesten Einkaufsmöglichkeiten zählen das IKEA Einrichtungshaus, der Baumarkt Globus und das Dong Xuan Center. An der Landsberger Allee und den angrenzenden Querstraßen sind zudem zahlreiche Unternehmen aus den Bereichen Lebensmittelhandel, Maschinenbau und Automobilindustrie, sowie diverse Autovermietungen angesiedelt. Der öffentliche Nahverkehr ist in dieser Gegend auf senkrecht zueinander verlaufenden Straßenbahnlinien beschränkt.
 
-\todo[inline]{Abbildung für den whitespot einfügen}
+\begin{figure}
+    \centering
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=7cm]{persona-landsberger-01}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=7cm]{persona-landsberger-03}
+    \end{subfigure}
+    \caption{Persona Gewerbe- und Industriegebiet Landsberger Allee}
+    \label{persona-landsberger-allee}
+\end{figure}
 
 Eine Anbindung an die Innenstadt bieten als weitere Verkehrsmittel des ÖPNV die U-Bahn-Station Magdalenenstraße, sowie die S-Bahn-Stationen Landsberger Allee, Storkower Straße, Springpfuhl und Pölchaustraße. Allerdings sind diese nicht fußläufig erreichbar. Insbesondere außerhalb der Stoßzeiten sind diese bedingt durch den geringeren Takt der Straßenbahn nur schwer zu erreichen.
 
@@ -187,19 +220,42 @@ Um die Anbindung an die anderen Verkehrsmittel des öffentlichen Nahverkehrs zu 
 \paragraph{Detailbetrachtung der Verkehrsinfrastruktur im dicht besiedelte Osten Marzahn-Hellersdorfs}
 Der östliche Teil Marzahn-Hellersdorfs ist von einer sehr hohen Einwohnerdichte geprägt. Gleichzeitig existiert keine vielfältige Verkehrsinfrastruktur. Die ÖPNV-Anbindung in diesem Gebiet ist stark von der Straßenbahninfrastruktur geprägt. Die Straßenbahnhaltestellen Alte-Hellerdorfer und Michendorfer Straße bieten eine gute Anbindung innerhalb des Kiezes, Gebiete die außerhalb des Straßenbahnnetzes liegen, sind vom östlichen Rand Marzahn-Hellersdorfs jedoch kaum erreichbar. Die nächste S-Bahnstation Mehrower Allee ist mit dem Bus 30~Minuten entfernt. Der nächstgelegene U-Bahnhof Hellersdorf ist selbst mit dem Bus oder der Tram mindestens 15~Minuten entfernt.
 
-\todo[inline]{Abbildung für den whitespot einfügen}
+\begin{figure}
+    \centering
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=7cm]{persona-marzahn-01}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=7cm]{persona-marzahn-02}
+    \end{subfigure}
+    \caption{Der dicht besiedelte Osten Marzahn-Hellersdorfse}
+    \label{persona-marzahn-hellersdorf}
+\end{figure}
 
 Von der aktuellen Verkehrssituation sind Arbeitnehmer*innen die in anderen Bezirken tätig sind besonders betroffen. Aber auch Senior*innen die sich innerhalb des Bezirks bewegen und beispielsweise in der Nachbarschaft engagieren, stehen vor großen Herausforderungen. Wichtige Begegnungsstätten, wie das Deutsche Rote Kreuz und der Nachbarschaftshilfe Klub~74~e.V. sind mit dem ÖPNV nicht in unter 30~Minuten erreichbar. Weitere Wege, beispielsweise bis zum Alexanderplatz, sind zwar mit der Straßenbahn erreichbar, setzen aber eine Reisezeit von mindestens 45 Minuten voraus.
 
 \paragraph{Lösungsansätze}
 Um die Erreichbarkeit innerhalb des Bezirks zu verbessern, sollte die Taktung der bestehenden Bus- und Straßenbahn Linien erhöht werden. Um die Anbindung an das übrige Stadtgebiet zu stärken, sollte die Anbindung an die S-Bahnstation Mehrower Allee und den U-Bahnhof Hellersdorf verbessert werden. Zu diesem Zweck könnten Expressbus-Linien eingerichtet werden, die die bestehende ÖPNV-Infrastruktur besser verknüpft.
 
-
 \subsubsection{Gewerbegebiet Gradestraße}
 \paragraph{Detailbetrachtung der Verkehrsinfrastruktur am Gewerbegebiet Gradestraße}
 Anhand der genaueren Betrachtung von Gewerbedichte und Lücken innerhalb der Verkehrsinfrastruktur konnte das Gewerbegebiet an der Gradestraße, Ecke Tempelhofer Weg identifiziert werden. In diesem Gewerbegebiet im nördlichen Britz, sind international agierende Unternehmen und wichtige Arbeitgeber wie Kieback\&Peter GmbH, Linde Gas Deutschland und Terra Naturkost Handels KG angesiedelt. Zusätzlich zur hohen Industrie- und Gewerbedichte, weist das Gebiet eine verhältnismäßig hohe Einwohnerdichte auf. Die Verkehrsanbindung des Gewerbegebiets Gradestraße ist jedoch mangelhaft.
 
-\todo[inline]{Abbildung für den whitespot einfügen}
+\begin{figure}
+    \centering
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=7cm]{persona-britz-01}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=7cm]{persona-britz-02}
+    \end{subfigure}
+    \caption{Gewerbegebiet Gradestraße}
+    \label{persona-britz}
+\end{figure}
 
 Die Erreichbarkeit des Gewerbegebiets Gradestraße ist stark von der guten Anbindung an die Stadtautobahn abhängig. Der ÖPNV ist in der Nähe des Gewerbegebiets nur unzureichend ausgebaut. Ausgehend von dem Gewerbegebiet sind die Buslinien 170 und M44 fußläufig erreichbar. Die Buslinie 170 wird außerhalb der Stoßzeiten nur im 20~Minuten-Takt bedient und selbst die regelmäßiger verkehrende Linie M44 bietet keine ausreichende Anbindung an den ÖPNV. Die U-Bahnstationen Blaschkoallee und Ullsteinstraße sind je 26 ~ehminuten und 9~Bus-Minuten entfernt. Die nächste S-Bahnstation (Hermannstraße) ist sogar 32~Gehminuten entfernt. Selbst mit dem Bus M44 ist die S-Bahnstation Hermannstraße, aufgrund von vier Zwischenhalten 17~Minuten entfernt.
 
