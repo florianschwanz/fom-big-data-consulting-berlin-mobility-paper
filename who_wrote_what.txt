@@ -1,0 +1,82 @@
+FL = Florian Lorisch
+LS = Leon Schlote
+MS = Michael Schwabe
+FS = Florian Schwanz
+
+
+1 Einleitung
+1.1 Problemstellung
+1.2 Projektziele
+1.3 Projektaufbau
+1.3.1 Arbeitspaket 1: Beschreibung der Ist-Situation
+1.3.2 Arbeitspaket 2: Aufzeigen von Schwachstellen der vorhandenen Verkehrsinfrastruktur
+1.3.3 Arbeitspaket 3: Ableiten von Handlungsempfehlungen
+1.3.4 Arbeitspaket 4: Visuelle und interaktive Aufbereitung der Analyseergebnisse
+1.4 Struktur des Berichts
+
+FS 2 Projektumsetzung
+FS 2.1 Vorgehensmodell und Organisation
+FS 2.1.1 Kanban
+FS 2.1.2 Extreme Programming
+FS 2.1.3 Weekly Sync
+FS 2.1.4 Pair Programming
+FS 2.2 Werkzeuge und Projektstruktur
+FS 2.2.1 Firebase
+FS 2.2.2 Github
+FS 2.3 Frameworks und Datenquellen
+FS 2.3.1 OpenStreetMap
+FS 2.3.2 Mapbox
+FS 2.3.3 Datenquellen
+FS 2.4 Methodik
+FS 2.4.1 Darstellung der Mobilitätsinfrastruktur durch Graphen
+FS 2.4.2 Isochronen als Erreichbarkeitsmetrik
+FS 2.4.3 Versuchsaufbau und Vorgehensweise
+
+3 Projekt- und Analyseergebnisse
+3.1 Beschreibung der Ist-Situation (Arbeitspaket1)
+3.1.1 Verteilung von Wohngebieten und der Einwohnerdichte
+3.1.2 Eckpunkte der urbanen Mobilität
+3.1.3 Berliner Straßennetz
+3.1.4 Bestand dedizierter Radverkehrsanlagen
+3.1.5 Berliner ÖPNV-Infrastruktur
+3.2 Aufzeigen von Schwachstellen der vorhandenen Verkehrsinfrastruktur (Arbeitspaket2)
+3.2.1 Motorisierter Individualverkehr
+3.2.2 Fahrradverkehr
+3.2.3 Businfrastruktur
+3.2.4 S-Bahn-Netz
+3.2.5 U-Bahn-Netz
+3.2.6 Gesamtes ÖPNV-Netz
+3.3 Ableiten von Handlungsempfehlungen (Arbeitspaket 3)
+3.3.1 Industriestandort Spandau
+3.3.1.1 Detailbetrachtung
+3.3.1.2 Lösungsansätze
+3.3.2 UrbanTechRepublic-TXL
+3.3.2.1 Detailbetrachtung
+3.3.2.2 Lösungsansätze
+FS 3.3.3 Gewerbe- und Industriegebiet Landsberger Allee
+FS 3.3.3.1 Detailbetrachtung
+FS 3.3.3.2 Lösungsansätze
+3.3.4 Der dicht besiedelte Osten Marzahn-Hellersdorfs
+3.3.4.1 Detailbetrachtung
+3.3.4.2 Lösungsansätze
+3.3.5 Gewerbegebiet Gradestraße
+3.3.5.1 Detailbetrachtung
+3.3.5.2 Lösungsansätze
+4 Ergebnispräsentation (Arbeitspaket 4)
+4.1 Visualisierung der Analyseergebnisse
+4.2 Interaktives Mobilitäts-Dashboard
+4.2.1 Öffentlicher Personennahverkehr
+4.2.2 Motorisierter Individualverkehr
+4.2.2.1 Zukünftige Erweiterungen
+
+5 Ergebnisreflexion
+5.1 Zusammenfassung der Projektergebnisse
+5.2 Limitierungen
+5.2.1 Datenverfügbarkeit und Qualität
+5.2.2 Komplexität der Analyse
+5.2.3 Begrenztes Domänenwissen
+5.3 Ausblick
+5.3.1 Anreicherung der Analyse
+5.3.2 Finalisierung des interaktiven Mobililitätskompasses
+5.3.3 Entwicklung eines Planungstools
+5.3.4 Entwicklung eines Mobilitätsindexes
