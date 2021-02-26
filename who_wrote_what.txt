@@ -56,7 +56,7 @@ FS 2.4.3 Versuchsaufbau und Vorgehensweise
 FS 3.3.3 Gewerbe- und Industriegebiet Landsberger Allee
 FS 3.3.3.1 Detailbetrachtung
 FS 3.3.3.2 Lösungsansätze
-3.3.4 Der dicht besiedelte Osten Marzahn-Hellersdorfs
+3.3.4 Dicht besiedelter Osten Marzahn-Hellersdorfs
 3.3.4.1 Detailbetrachtung
 3.3.4.2 Lösungsansätze
 3.3.5 Gewerbegebiet Gradestraße
