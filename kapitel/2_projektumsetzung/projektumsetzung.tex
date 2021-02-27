@@ -11,20 +11,17 @@ Die Umsetzung des Projekts ist unter Verwendung der agilen Methodiken \emph{Kanb
 \subsubsection{Kanban}
 \label{kanban}
 
-\emph{Kanban} ist ein weitverbreitetes agiles Vorgehensmodell in der Softwareentwicklung. Kanban ermöglicht durch die konsequente Visualisierung des Status einzelner Arbeitspakete eine transparente Darstellung des Projektfortschritts. Gleichzeitig verhindert die Definition eines \ac{WIP} Limits, dass das Projektteam zu viele Aufgaben parallelisiert.
-
-
-durchgehende Verfolgung des, dass das Projektteam an zu vielen Aufgaben parallel arbeitet.
-
-\subsubsection{Extreme Programming}
-\label{extreme_programming}
-
-Bei \emph{Extreme Programming} liegt der Fokus auf der Erstellung funktionsfähiger Software zu Lasten einer formalisierten Vorgehensweise. Das Softwareprodukt wird in Iterationen weiterentwickelt, wobei stets ein lauffähiges Inkrement existiert.% Da sich dieses Projekt auf das Data Storytelling fokussiert und sich damit die Implementierung auf die Erstellung eines Prototypen beschränkt, ist bewusst auf die Aufwandsschätzung einzelner Arbeitspakete verzichtet worden.
+\emph{Kanban} ist ein weitverbreitetes agiles Vorgehensmodell in der Softwareentwicklung. Kanban ermöglicht durch die konsequente Visualisierung des Status einzelner Arbeitspakete eine transparente Darstellung des Projektfortschritts. Gleichzeitig verhindert die Definition eines \ac{WIP} Limits, dass das Projektteam zu viele Aufgaben parallelisiert. %durchgehende Verfolgung des, dass das Projektteam an zu vielen Aufgaben parallel arbeitet.
 
 \subsubsection{Weekly Sync}
 \label{weekly_sync}
 
 Ein wöchentlicher Abstimmungstermin hat über die gesamte Projektlaufzeit Raum für die Synchronisation des Umsetzungsfortschritts, die gemeinsame Priorisierung der offenen Arbeitspakete sowie für technische Diskussionen gegeben.
+
+\subsubsection{Extreme Programming}
+\label{extreme_programming}
+
+Bei \emph{Extreme Programming} liegt der Fokus auf der Erstellung funktionsfähiger Software zu Lasten einer formalisierten Vorgehensweise. Das Softwareprodukt wird in Iterationen weiterentwickelt, wobei stets ein lauffähiges Inkrement existiert.% Da sich dieses Projekt auf das Data Storytelling fokussiert und sich damit die Implementierung auf die Erstellung eines Prototypen beschränkt, ist bewusst auf die Aufwandsschätzung einzelner Arbeitspakete verzichtet worden.
 
 \subsubsection{Pair Programming}
 \label{pair_programming}
@@ -61,7 +58,12 @@ GitHub beinhaltet mit \emph{GitHub Projects}\footnote{https://github.com/feature
 
 Mittels \emph{GitHub Actions}\footnote{https://github.com/features/actions/} lassen sich wiederkehrende Aufgaben basierend auf Änderungen an der Codebasis automatisieren. Im Rahmen dieses Projekts veranlasst beispielsweise die Veröffentlichung einer Quellcodeänderung innerhalb des Frontend-Projekts das automatische Deployment der Applikation nach Firebase, wodurch jeder Zwischenstand öffentlich sichtbar ist und evaluiert werden kann.
 
-\subsection{Frameworks und Datenquellen}
+\subsubsection{Mapbox}
+\label{mapbox}
+
+Der Dienst \emph{Mapbox}\footnote{https://www.mapbox.com/} ermöglicht es Daten aus OpenStreetMap(siehe Kapitel ~\ref{open_street_map}) in Webapplikationen einzubinden. Darüber hinaus bietet Mapbox die Möglichkeit, Markierungen, Animationen und zusätzliche Ebenen zur Visualisierung weiterer Datenquellen zu definieren. Das Layout der im Projektverlauf erstellten Karten nutzt den großen Funktionsumfang von Mapbox.
+
+\subsection{Datenquellen}
 \label{frameworks_und_datenquellen}
 
 \subsubsection{OpenStreetMap}
@@ -69,12 +71,7 @@ Mittels \emph{GitHub Actions}\footnote{https://github.com/features/actions/} las
 
 Das quelloffene Projekt \emph{OpenStreetMap}\footnote{https://www.openstreetmap.de/} stellt Geodaten über Verkehrswege und Flächennutzung zur Verfügung, welche für die Erstellung von Kartenmaterial genutzt werden können. Die durch die OpenStreetMap Community zur Verfügung gestellten Geodaten bilden den überwiegenden Teil der im Rahmen des Projekts genutzt Datenbasis.
 
-\subsubsection{Mapbox}
-\label{mapbox}
-
-Der Dienst \emph{Mapbox}\footnote{https://www.mapbox.com/} nutzt die von OpenStreetMap bereitgestellten Geoinformationen und stellt eine Programmierstelle zur Verfügung, um diese als Karten in eigene Applikationen einzubinden. Darüber hinaus bietet Mapbox die Möglichkeit, Markierungen, Animationen und zusätzliche Ebenen zur Visualisierung weiterer Datenquellen zu definieren. Das Layout der im Projektverlauf erstellten Karten nutzt den großen Funktionsumfang von Mapbox.
-
-\subsubsection{Datenquellen}
+\subsubsection{Weitere Datenquellen}
 \label{datenquellen}
 
 Neben den Informationen zu Verkehrswegen und der Flächennutzung wurden folgende Datenquellen verwendet:
@@ -151,4 +148,4 @@ Um die Situation des öffentlichen Personennahverkehrs ganzheitlich beurteilen b
 \paragraph*{Personaansatz}
 \label{personaansatz}
 
-Die fünf markantesten, während der holistischen Analyse identifizierten Orte sollen anhand von fünf repräsentativen Personas greifbarer gemacht werden. Jede der Personas bildet exemplarisch ein Problemszenario ab.
+Die fünf markantesten, während der holistischen Analyse identifizierten Orte sollen anhand von fünf repräsentativen Personas greifbarer gemacht werden. Jede der Personas bildet exemplarisch ein Problemszenario ab. Die Personas werden vor allem in der Webapplikation aufgegriffen, um die Bürger*innen-Kommunikation zu erleichtern.
