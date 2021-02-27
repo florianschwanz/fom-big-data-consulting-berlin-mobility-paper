@@ -11,12 +11,15 @@ Die Umsetzung des Projekts ist unter Verwendung der agilen Methodiken \emph{Kanb
 \subsubsection{Kanban}
 \label{kanban}
 
-\emph{Kanban} ist ein weitverbreitetes agiles Vorgehensmodell in der Softwareentwicklung. Kanban ermöglicht durch die konsequente Visualisierung des Status einzelner Arbeitspakete eine transparente Darstellung des Projektfortschritts. Gleichzeitig verhindert die durchgehende Verfolgung des \ac{WIP}, dass das Projektteam an zu vielen Aufgaben parallel arbeitet.
+\emph{Kanban} ist ein weitverbreitetes agiles Vorgehensmodell in der Softwareentwicklung. Kanban ermöglicht durch die konsequente Visualisierung des Status einzelner Arbeitspakete eine transparente Darstellung des Projektfortschritts. Gleichzeitig verhindert die Definition eines \ac{WIP} Limits, dass das Projektteam zu viele Aufgaben parallelisiert.
+
+
+durchgehende Verfolgung des, dass das Projektteam an zu vielen Aufgaben parallel arbeitet.
 
 \subsubsection{Extreme Programming}
 \label{extreme_programming}
 
-Bei \emph{Extreme Programming} liegt der Fokus auf der Erstellung funktionsfähiger Software zu Lasten einer formalisierten Vorgehensweise. Das Softwareprodukt wird in Iterationen weiterentwickelt, wobei stets ein lauffähiges Inkrement existiert. Da sich dieses Projekt auf das Data Storytelling fokussiert und sich damit die Implementierung auf die Erstellung eines Prototypen beschränkt, ist bewusst auf die Aufwandsschätzung einzelner Arbeitspakete verzichtet worden.
+Bei \emph{Extreme Programming} liegt der Fokus auf der Erstellung funktionsfähiger Software zu Lasten einer formalisierten Vorgehensweise. Das Softwareprodukt wird in Iterationen weiterentwickelt, wobei stets ein lauffähiges Inkrement existiert.% Da sich dieses Projekt auf das Data Storytelling fokussiert und sich damit die Implementierung auf die Erstellung eines Prototypen beschränkt, ist bewusst auf die Aufwandsschätzung einzelner Arbeitspakete verzichtet worden.
 
 \subsubsection{Weekly Sync}
 \label{weekly_sync}
@@ -28,7 +31,7 @@ Ein wöchentlicher Abstimmungstermin hat über die gesamte Projektlaufzeit Raum 
 
 Teile der Konzeptions- und Implementierungsarbeiten sind im \emph{Pair Programming} durchgeführt worden. Bei dieser Technik teilen sich zwei Entwickler einen Bildschirm, wobei einer der beiden als Pilot und der andere als Navigator agiert. Der Pilot ist in diesem Szenario derjenige, der den Quellcode schreibt, der Navigator wiederum gibt die Richtung vor. Diese Vorgehensweise kann durch das Vier-Augen-Prinzip die Qualität des Quellcodes steigern. Implizit findet darüber hinaus auch ein Wissenstransfer zwischen den beiden Entwicklern statt.
 
-\subsection{Werkzeuge und Projektstruktur}
+\subsection{Werkzeuge}
 \label{werkzeuge_und_projektstruktur}
 
 Der folgende Abschnitt beschreibt die während des Projekts verwendeten Werkzeuge, welche für das Hosting der Webapplikation und das Projektmanagement genutzt worden sind.
@@ -58,7 +61,7 @@ GitHub beinhaltet mit \emph{GitHub Projects}\footnote{https://github.com/feature
 
 Mittels \emph{GitHub Actions}\footnote{https://github.com/features/actions/} lassen sich wiederkehrende Aufgaben basierend auf Änderungen an der Codebasis automatisieren. Im Rahmen dieses Projekts veranlasst beispielsweise die Veröffentlichung einer Quellcodeänderung innerhalb des Frontend-Projekts das automatische Deployment der Applikation nach Firebase, wodurch jeder Zwischenstand öffentlich sichtbar ist und evaluiert werden kann.
 
-\subsection{Frameworks und Datenquellen}
+\subsection{Datenquellen}
 \label{frameworks_und_datenquellen}
 
 \subsubsection{OpenStreetMap}
@@ -69,7 +72,7 @@ Das quelloffene Projekt \emph{OpenStreetMap}\footnote{https://www.openstreetmap.
 \subsubsection{Mapbox}
 \label{mapbox}
 
-Der Dienst \emph{Mapbox}\footnote{https://www.mapbox.com/} nutzt die von OpenStreetMap bereitgestellten Geoinformationen und stellt eine Programmierstelle zur Verfügung, um diese in eigene Applikationen einzubinden und bietet darüber hinaus die Möglichkeit, Markierungen, Animationen und zusätzliche Ebenen zu definieren. Das Layout der im Projektverlauf erstellten Karten nutzt den großen Funktionsumfang von Mapbox.
+Der Dienst \emph{Mapbox}\footnote{https://www.mapbox.com/} nutzt die von OpenStreetMap bereitgestellten Geoinformationen und stellt eine Programmierstelle zur Verfügung, um diese als Karten in eigene Applikationen einzubinden. Darüber hinaus bietet Mapbox die Möglichkeit, Markierungen, Animationen und zusätzliche Ebenen zur Visualisierung weiterer Datenquellen zu definieren. Das Layout der im Projektverlauf erstellten Karten nutzt den großen Funktionsumfang von Mapbox.
 
 \subsubsection{Datenquellen}
 \label{datenquellen}
@@ -77,9 +80,9 @@ Der Dienst \emph{Mapbox}\footnote{https://www.mapbox.com/} nutzt die von OpenStr
 Neben den Informationen zu Verkehrswegen und der Flächennutzung wurden folgende Datenquellen verwendet:
 
 \begin{description}
-    \item[PLZ Einwohner]\footcite{Einwohnerdaten} zur Darstellung der Einwohnerdichte auf Ebene von Postleitzahlbereichen
-    \item[VBB-Fahrplandaten]\footcite{Fahrplandaten} zur Identifikation aller Haltestellen des \ac{ÖPNV}
-    \item[Uber Movement - Geschwindigkeitsdaten]\footcite{Uberdaten} zur Ermittlung tatsächlich mit dem Auto gefahrener Geschwindigkeiten
+    \item[Einwohnerzahl pro PLZ] zur Darstellung der Einwohnerdichte auf Ebene von Postleitzahlbereichen\footcite{Einwohnerdaten}
+    \item[VBB-Netz- und Fahrplandaten] zur Identifikation aller Haltestellen des \ac{ÖPNV}\footcite{Fahrplandaten}
+    \item[Uber Movement - Geschwindigkeitsdaten] zur Ermittlung tatsächlich mit dem Auto gefahrener Geschwindigkeiten\footcite{Uberdaten}
 \end{description}
 
 \subsection{Methodik}
@@ -105,7 +108,7 @@ Im Gegensatz dazu ist die Isochrone bei der Ausweitung auf das U-Bahn-Netz, welc
 
 \img{isochrone-20min-fom-walk-subway}{isochrone-20min-fom-walk-subway}{width=0.65\textwidth}{20-Minuten-Isochrone ausgehend vom Standort der FOM (zu Fuß + U-Bahn)}
 
-Als qualitatives Maß für die Anbindungsqualität eines Punktes dient im Rahmen dieses Projekts der mittlere Radius der konvexen Außenhülle der Isochrone. Auf diese Weise wird die Reichweite betrachtet, die ausgehend von einem Ort durchschnittlich erreicht werden kann. Es wird dabei davon ausgegangen, dass die Reichweite bidirektional gültig ist. Entsprechend dieser Metrik ist ein Punkt, von welchem sich andere Orte besonders gut erreichen lassen im Umkehrschluss selbst gut zu erreichen. Die relative Güte der Konnektivität eines Punktes lässt sich im Vergleich mit anderen Punkten ermitteln.
+Als qualitatives Maß für die Anbindungsqualität eines Punktes dient im Rahmen dieses Projekts der mittlere Radius der konvexen Außenhülle der Isochrone. Auf diese Weise wird die Reichweite betrachtet, die ausgehend von einem Ort durchschnittlich erreicht werden kann. Es wird davon ausgegangen, dass es egal ist in welche Richtung der Weg zurückgelegt wird und die Reichweite bidirektional gültig ist. Entsprechend dieser Metrik ist ein Punkt, von welchem sich andere Orte besonders gut erreichen lassen im Umkehrschluss selbst gut zu erreichen. Die relative Güte der Konnektivität eines Punktes lässt sich im Vergleich mit anderen Punkten ermitteln.
 
 \subsubsection{Versuchsaufbau und Vorgehensweise}
 \label{versuchsaufbau_und_vorgehensweise}
@@ -115,7 +118,7 @@ Ein Ziel dieser Arbeit ist die Identifikation von Schwachstellen des öffentlich
 \paragraph*{Vorbereitung}
 \label{vorbereitung}
 
-Als vorbereitender Schritt sind 10.000 zufällig über das gesamte Stadtgebiet verteilte Punkte generiert worden, wobei unbebaute Flächen, wie Parks, Wälder, Felder, Friedhöfe, sowie Wasserflächen ausgenommen worden sind. Diese generierten Punkte dienen als Ausgangspunkt für die Berechnung von Isochronen und sind somit auch Ausgangspunkt der im Rahmen des Projekts vorgenommenen Analysen. Zur Sicherstellung der Vergleichbarkeit der einzelnen Verkehrsmittel, ist ein fester Wert von 15 Minuten als Berechnungsgrundlage verwendet worden. Dieser Wert beruht auf Heuristiken und der Tatsache, dass in dieser Zeit die durchschnittliche Distanz zur nächsten ÖPNV-Haltestelle von 500 Metern\footcite{cnb} zurückgelegt werden kann. Der Wert ist wiederum bewusst auch nicht zu hoch gewählt worden, um den Fokus auf lokalen Infrastrukturproblemen zu belassen.
+Als vorbereitender Schritt sind 10.000 zufällig über das gesamte Stadtgebiet verteilte Punkte generiert worden, wobei unbebaute Flächen, wie Parks, Wälder, Felder, Friedhöfe, sowie Wasserflächen ausgenommen worden sind. Diese generierten Punkte dienen als Ausgangspunkt für die Berechnung von Isochronen und sind somit auch Ausgangspunkt der im Rahmen des Projekts vorgenommenen Analysen. Zur Sicherstellung der Vergleichbarkeit der einzelnen Verkehrsmittel, ist ein fester Wert von 15 Minuten als Berechnungsgrundlage verwendet worden. Dieser Wert beruht auf Heuristiken und der Tatsache, dass in dieser Zeit die durchschnittliche Distanz zur nächsten ÖPNV-Haltestelle von 500 Metern\footcite{cnb} zurückgelegt werden kann. So wird Fokus auf lokale Infrastrukturprobleme gelegt und eine Unschärfe vermieden, die Auftritt, wenn sehr große Radien gewählt werden.
 
 \paragraph*{Verkehrsmittelspezifische Analyse}
 \label{verkehrsmittelspezifische_analyse}
@@ -143,9 +146,9 @@ Die Analyseergebnisse werden im GeoJSON-Format abgelegt, wobei für jeden der 10
 \paragraph*{Holistische Analyse}
 \label{holistische_analyse}
 
-Um die Situation des öffentlichen Personennahverkehrs ganzheitlich beurteilen beziehungsweise präzise Verbesserungsvorschläge machen zu können, sind die oben aufgeführten Schritte ebenfalls unter Verwendung der kombinierten Verkehrsgraphen des öffentlichen Nahverkehrs durchgeführt worden. Die ganzheitliche Analyse bildet die Grundlage für den daraufbasierenden manuellen Analyseschritt. In diesen sollen diejenigen Orte mit einer schlechten Anbindung identifiziert werden, welche sich in relativer Nähe zu \acp{POI} - also beispielsweise Industrie- und Gewerbegebieten oder Universitäten und Hochschulen - befinden. Diese werden im folgenden als \emph{White Spots} bezeichnet.
+Um die Situation des öffentlichen Personennahverkehrs ganzheitlich beurteilen beziehungsweise präzise Verbesserungsvorschläge machen zu können, sind die oben aufgeführten Schritte ebenfalls unter Verwendung der kombinierten Verkehrsgraphen des öffentlichen Nahverkehrs durchgeführt worden. Die ganzheitliche Analyse bildet die Grundlage für den qualitativen Analyseschritt. In diesem sollen diejenigen Orte mit einer schlechten Anbindung identifiziert werden, welche sich in relativer Nähe zu \acp{POI} wie Industrie- und Gewerbegebieten oder Universitäten und Hochschulen befinden.
 
 \paragraph*{Personaansatz}
 \label{personaansatz}
 
-Die fünf markantesten während der holistischen Analyse identifizierten Orte sollen durch die Kreation von fünf Personas greifbarer gemacht werden. Jede der Personas bildet exemplarisch ein Problemszenario ab, welches sich jeweils auf einen der identifzierten White Spots bezieht. Neben einer persönlichen Problembeschreibung sollen auch mögliche Lösungsansätze skizziert werden.
+Die fünf markantesten, während der holistischen Analyse identifizierten Orte sollen anhand von fünf repräsentativen Personas greifbarer gemacht werden. Jede der Personas bildet exemplarisch ein Problemszenario ab.
