@@ -59,9 +59,9 @@ FS 3.3.3.2 Lösungsansätze
 3.3.4 Dicht besiedelter Osten Marzahn-Hellersdorfs
 MS 3.3.4.1 Detailbetrachtung
 MS 3.3.4.2 Lösungsansätze
-MS 3.3.5 Gewerbegebiet Gradestraße
-MS 3.3.5.1 Detailbetrachtung
-MS 3.3.5.2 Lösungsansätze
+3.3.5 Gewerbegebiet Gradestraße
+3.3.5.1 Detailbetrachtung
+3.3.5.2 Lösungsansätze
 4 Ergebnispräsentation (Arbeitspaket 4)
 4.1 Visualisierung der Analyseergebnisse
 4.2 Interaktives Mobilitäts-Dashboard
