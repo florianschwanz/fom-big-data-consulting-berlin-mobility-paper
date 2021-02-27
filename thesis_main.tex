@@ -365,10 +365,10 @@ mincrossrefs = 1
 % In Overleaf führt der Einsatz des Symbolverzeichnisses zu einem Fehler, der aber ignoriert werdne kann
 % Falls das Symbolverzeichnis nicht im Inhaltsverzeichnis angezeigt werden soll
 % dann folgende Zeile auskommentieren.
-\addcontentsline{toc}{section}{\symheadingname}
-\input{skripte/symbolDef}
-\listofsymbols
-\newpage
+%\addcontentsline{toc}{section}{\symheadingname}
+%\input{skripte/symbolDef}
+%\listofsymbols
+%\newpage
 
 %-----------------------------------
 % Glossar
@@ -452,7 +452,7 @@ mincrossrefs = 1
 % noch weitere Arten von Zusammenfassungen eines Literaturverzeichnisse zu
 % erzeugen.
 % Beispiel: [type=book,type=article]
-\printbibliography[nottype=online,heading=bibintoc,title={\langde{Literaturverzeichnis}\langen{Bibliography}}]
+\printbibliography[type=online,heading=bibintoc,title={\langde{Literaturverzeichnis}\langen{Bibliography}}]
 
 % neue Seite für Internetquellen-Verzeichnis
 \newpage
@@ -462,7 +462,7 @@ mincrossrefs = 1
 % Die Option heading=bibintoc würde die Internetquelle als eigenen Eintrag im
 % Inhaltsverzeicnis anzeigen.
 %\printbibliography[type=online,heading=bibintoc,title={\headingNameInternetSources}]
-\printbibliography[type=online,heading=subbibliography,title={\headingNameInternetSources}]
+%\printbibliography[type=online,heading=subbibliography,title={\headingNameInternetSources}]
 
 %\input{kapitel/anhang/erklaerung}
 \end{document}
